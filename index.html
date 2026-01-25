@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İngilizce Öğrenme Platformu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1>📚 İngilizce</h1>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+            <nav class="chapter-nav">
+                <button class="chapter-btn active" data-chapter="1">
+                    <span class="chapter-number">1</span>
+                    <span class="chapter-title">Temel Bilgiler</span>
+                </button>
+                <button class="chapter-btn" data-chapter="2">
+                    <span class="chapter-number">2</span>
+                    <span class="chapter-title">Aile</span>
+                </button>
+                <button class="chapter-btn" data-chapter="3">
+                    <span class="chapter-number">3</span>
+                    <span class="chapter-title">Günlük Rutin</span>
+                </button>
+                <button class="chapter-btn" data-chapter="4">
+                    <span class="chapter-number">4</span>
+                    <span class="chapter-title">Soru Sorma</span>
+                </button>
+                <button class="chapter-btn" data-chapter="5">
+                    <span class="chapter-number">5</span>
+                    <span class="chapter-title">Tatil</span>
+                </button>
+                <button class="chapter-btn" data-chapter="6">
+                    <span class="chapter-number">6</span>
+                    <span class="chapter-title">Alışveriş</span>
+                </button>
+            </nav>
+            <div class="progress-section">
+                <h3>İlerleme</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p id="progressText">0% Tamamlandı</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="mainContent">
+            <div class="content-wrapper">
+                <!-- Tab Navigation -->
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="explanation">📖 Açıklama</button>
+                    <button class="tab-btn" data-tab="exercise">✍️ Alıştırma</button>
+                    <button class="tab-btn" data-tab="reading">📚 Okuma</button>
+                    <button class="tab-btn" data-tab="game">🎮 Oyun</button>
+                </div>
+
+                <!-- Content Sections -->
+                <div class="content-section" id="contentSection">
+                    <!-- Explanation Section -->
+                    <div class="tab-content active" id="explanationTab">
+                        <h2 id="chapterTitle"></h2>
+                        <div id="explanationContent"></div>
+                    </div>
+
+                    <!-- Exercise Section -->
+                    <div class="tab-content" id="exerciseTab">
+                        <h2>Alıştırmalar</h2>
+                        <div id="exerciseContent"></div>
+                        <button class="btn-primary" id="checkExercise">Cevapları Kontrol Et</button>
+                        <div id="exerciseResult"></div>
+                    </div>
+
+                    <!-- Reading Section -->
+                    <div class="tab-content" id="readingTab">
+                        <h2>Okuma - Metin Anlama</h2>
+                        <div id="readingContent"></div>
+                        <button class="btn-primary" id="checkReading">Cevapları Kontrol Et</button>
+                        <div id="readingResult"></div>
+                    </div>
+
+                    <!-- Game Section -->
+                    <div class="tab-content" id="gameTab">
+                        <h2>Oyun</h2>
+                        <div id="gameContent"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confettiContainer"></div>
+
+    <!-- Load Data and Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
