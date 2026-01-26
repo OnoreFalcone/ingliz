@@ -26,6 +26,8 @@ let mobileProgressText;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing app...');
+    
     // Initialize DOM elements after DOM is loaded
     sidebar = document.getElementById('sidebar');
     menuToggle = document.getElementById('menuToggle');
@@ -43,6 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     currentChapterIndicator = document.getElementById('currentChapterIndicator');
     mobileProgressFill = document.getElementById('mobileProgressFill');
     mobileProgressText = document.getElementById('mobileProgressText');
+    
+    console.log('DOM elements initialized:', {
+        chapterButtons: chapterButtons.length,
+        tabButtons: tabButtons.length,
+        mobileChapterItems: mobileChapterItems.length,
+        learningDataExists: typeof learningData !== 'undefined'
+    });
     
     loadProgress();
     loadChapter(1);
@@ -109,10 +118,16 @@ function setupEventListeners() {
 
 // Load chapter content
 function loadChapter(chapterId) {
+    console.log('loadChapter called with:', chapterId);
     currentChapter = chapterId;
     const chapter = learningData.chapters[chapterId];
     
-    if (!chapter) return;
+    console.log('Chapter data:', chapter ? 'found' : 'NOT FOUND');
+    
+    if (!chapter) {
+        console.error('Chapter not found:', chapterId);
+        return;
+    }
 
     // Update active chapter button
     chapterButtons.forEach(btn => {
@@ -147,11 +162,19 @@ function loadChapter(chapterId) {
 
 // Load explanation content
 function loadExplanation(chapter) {
+    console.log('loadExplanation called');
     const titleEl = document.getElementById('chapterTitle');
     const contentEl = document.getElementById('explanationContent');
     
-    titleEl.textContent = chapter.title;
-    contentEl.innerHTML = chapter.explanation.content;
+    console.log('Elements found:', {
+        titleEl: titleEl !== null,
+        contentEl: contentEl !== null,
+        hasTitle: !!chapter.title,
+        hasContent: !!chapter.explanation?.content
+    });
+    
+    if (titleEl) titleEl.textContent = chapter.title;
+    if (contentEl) contentEl.innerHTML = chapter.explanation.content;
 }
 
 // Load exercises

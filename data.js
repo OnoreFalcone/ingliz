@@ -1,5 +1,5 @@
 // Merkezi veri yapısı - Kolayca genişletilebilir
-const learningData = {
+var learningData = {
     chapters: {
         1: {
             title: "Temel Bilgiler",
