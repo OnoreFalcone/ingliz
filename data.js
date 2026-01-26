@@ -8,86 +8,150 @@ const learningData = {
                 content: `
                     <div class="explanation-box">
                         <h3>🎯 Kişi Zamirleri (Personal Pronouns)</h3>
-                        <p>İngilizcede kişi zamirleri cümlenin öznesini gösterir:</p>
+                        <p><strong>📌 Basit Açıklama:</strong> Kişi zamirleri, Türkçedeki "ben, sen, o" gibi kelimelerdir. Cümlede kimin hakkında konuştuğumuzu gösterir.</p>
                         <table class="vocab-table">
                             <tr>
                                 <th>İngilizce</th>
                                 <th>Türkçe</th>
-                                <th>Örnek</th>
+                                <th>Örnek Cümle</th>
                             </tr>
                             <tr>
                                 <td><strong>I</strong></td>
                                 <td>Ben</td>
-                                <td>I am a teacher.</td>
+                                <td><strong>I</strong> am a teacher. (Ben bir öğretmenim.)</td>
                             </tr>
                             <tr>
                                 <td><strong>You</strong></td>
                                 <td>Sen/Siz</td>
-                                <td>You are kind.</td>
+                                <td><strong>You</strong> are kind. (Sen naziksin.)</td>
                             </tr>
                             <tr>
                                 <td><strong>He</strong></td>
                                 <td>O (erkek)</td>
-                                <td>He is tall.</td>
+                                <td><strong>He</strong> is tall. (O uzun boylu.)</td>
                             </tr>
                             <tr>
                                 <td><strong>She</strong></td>
                                 <td>O (kadın)</td>
-                                <td>She is smart.</td>
+                                <td><strong>She</strong> is smart. (O zeki.)</td>
                             </tr>
                             <tr>
                                 <td><strong>It</strong></td>
-                                <td>O (nesneler/hayvanlar)</td>
-                                <td>It is big.</td>
+                                <td>O (eşya/hayvan)</td>
+                                <td><strong>It</strong> is big. (O büyük.)</td>
                             </tr>
                             <tr>
                                 <td><strong>We</strong></td>
                                 <td>Biz</td>
-                                <td>We are friends.</td>
+                                <td><strong>We</strong> are friends. (Biz arkadaşız.)</td>
                             </tr>
                             <tr>
                                 <td><strong>They</strong></td>
                                 <td>Onlar</td>
-                                <td>They are students.</td>
+                                <td><strong>They</strong> are students. (Onlar öğrenci.)</td>
                             </tr>
                         </table>
+                        <p>💡 <strong>İpucu:</strong> "It" sadece insanlar için değil! Masa, kedi, araba gibi her şey için kullanılır.</p>
                     </div>
+
                     <div class="explanation-box">
-                        <h3>📝 To Be Fiili (Am, Is, Are)</h3>
-                        <p><strong>To Be</strong> fiili "olmak" anlamına gelir ve İngilizcede en temel fiildir:</p>
+                        <h3>📝 To Be Fiili - "Olmak" Fiili (Am, Is, Are)</h3>
+                        <p><strong>📌 Basit Açıklama:</strong> İngilizcede "olmak" fiili 3 şekilde yazılır: <strong>am, is, are</strong></p>
+                        <p><strong>🎯 Hangi zamiri hangi fiille kullanıyoruz?</strong></p>
+                        
+                        <div class="grammar-focus">
+                            <h4>Kural çok basit:</h4>
+                            <ul>
+                                <li><strong>I</strong> → her zaman <strong>am</strong> kullan</li>
+                                <li><strong>He, She, It</strong> → her zaman <strong>is</strong> kullan</li>
+                                <li><strong>You, We, They</strong> → her zaman <strong>are</strong> kullan</li>
+                            </ul>
+                        </div>
+
+                        <p><strong>📚 Örnekler:</strong></p>
                         <ul>
-                            <li><strong>I am</strong> → Ben'im</li>
-                            <li><strong>You are</strong> → Sen'sin / Siz'siniz</li>
-                            <li><strong>He/She/It is</strong> → O'dur</li>
-                            <li><strong>We are</strong> → Biz'iz</li>
-                            <li><strong>They are</strong> → Onlar'dır</li>
+                            <li>I <strong>am</strong> happy. (Ben mutluyum.) ✓</li>
+                            <li>I <strong>is</strong> happy. (❌ YANLIŞ! "I" ile "is" kullanılmaz)</li>
+                            <li>She <strong>is</strong> a doctor. (O bir doktor.) ✓</li>
+                            <li>We <strong>are</strong> students. (Biz öğrenciyiz.) ✓</li>
+                            <li>The cat <strong>is</strong> black. (Kedi siyah.) ✓ - "cat" = "it" gibi düşün</li>
+                            <li>My parents <strong>are</strong> happy. (Ailem mutlu.) ✓ - "parents" = çoğul = "they"</li>
                         </ul>
-                        <p><em>Örnekler:</em></p>
+
+                        <p><strong>🔸 Kısaltmalar (Günlük konuşmada çok kullanılır):</strong></p>
                         <ul>
-                            <li>I am happy. (Ben mutluyum.)</li>
-                            <li>She is a doctor. (O doktordur.)</li>
-                            <li>We are students. (Biz öğrenciyiz.)</li>
+                            <li>I am → <strong>I'm</strong></li>
+                            <li>You are → <strong>You're</strong></li>
+                            <li>He is → <strong>He's</strong></li>
+                            <li>She is → <strong>She's</strong></li>
+                            <li>It is → <strong>It's</strong></li>
+                            <li>We are → <strong>We're</strong></li>
+                            <li>They are → <strong>They're</strong></li>
                         </ul>
+                        <p>Örnek: <strong>I'm</strong> tired. = I am tired. (Ben yorgunum.)</p>
                     </div>
+
                     <div class="explanation-box">
                         <h3>🔄 Olumsuz Cümleler (Negative Sentences)</h3>
-                        <p>Olumsuz yapmak için <strong>not</strong> eklenir:</p>
+                        <p><strong>📌 Basit Açıklama:</strong> Olumsuz yapmak için fiilden sonra <strong>not</strong> ekle!</p>
+                        
+                        <div class="grammar-focus">
+                            <h4>Formül:</h4>
+                            <p>Özne + am/is/are + <strong>not</strong> + sıfat/isim</p>
+                        </div>
+
+                        <p><strong>📚 Örnekler:</strong></p>
                         <ul>
-                            <li><strong>I am not</strong> (I'm not) → Ben değilim</li>
-                            <li><strong>You are not</strong> (You aren't) → Sen değilsin</li>
-                            <li><strong>He is not</strong> (He isn't) → O değil</li>
+                            <li>I am <strong>not</strong> sad. (Ben üzgün <strong>değilim</strong>.)</li>
+                            <li>She is <strong>not</strong> a teacher. (O öğretmen <strong>değil</strong>.)</li>
+                            <li>We are <strong>not</strong> tired. (Biz yorgun <strong>değiliz</strong>.)</li>
+                            <li>The book is <strong>not</strong> interesting. (Kitap ilginç <strong>değil</strong>.)</li>
                         </ul>
-                        <p><em>Örnek:</em> I am not sad. (Ben üzgün değilim.)</p>
+
+                        <p><strong>🔸 Kısaltmalar:</strong></p>
+                        <ul>
+                            <li>I am not → <strong>I'm not</strong> (tek kısaltma)</li>
+                            <li>You are not → <strong>You're not</strong> VEYA <strong>You aren't</strong></li>
+                            <li>He is not → <strong>He's not</strong> VEYA <strong>He isn't</strong></li>
+                            <li>She is not → <strong>She's not</strong> VEYA <strong>She isn't</strong></li>
+                            <li>It is not → <strong>It's not</strong> VEYA <strong>It isn't</strong></li>
+                            <li>We are not → <strong>We're not</strong> VEYA <strong>We aren't</strong></li>
+                            <li>They are not → <strong>They're not</strong> VEYA <strong>They aren't</strong></li>
+                        </ul>
+                        <p>Örnek: <strong>She isn't</strong> happy. = She is not happy. (O mutlu değil.)</p>
                     </div>
+
                     <div class="explanation-box">
                         <h3>❓ Soru Cümleleri (Questions)</h3>
-                        <p>Soru yapmak için <strong>am/is/are</strong> öne gelir:</p>
+                        <p><strong>📌 Basit Açıklama:</strong> Soru yapmak için <strong>am/is/are</strong> fiilini cümlenin başına al!</p>
+                        
+                        <div class="grammar-focus">
+                            <h4>Formül:</h4>
+                            <p><strong>Am/Is/Are</strong> + özne + sıfat/isim + ?</p>
+                        </div>
+
+                        <p><strong>🔄 Normal cümleden soruya:</strong></p>
                         <ul>
-                            <li><strong>Am I...?</strong> → Ben ... miyim?</li>
-                            <li><strong>Are you...?</strong> → Sen ... misin?</li>
-                            <li><strong>Is he...?</strong> → O ... mi?</li>
+                            <li>You <strong>are</strong> happy. → <strong>Are</strong> you happy? (Mutlu musun?)</li>
+                            <li>She <strong>is</strong> a doctor. → <strong>Is</strong> she a doctor? (O doktor mu?)</li>
+                            <li>They <strong>are</strong> students. → <strong>Are</strong> they students? (Onlar öğrenci mi?)</li>
                         </ul>
-                        <p><em>Örnek:</em> Are you happy? (Mutlu musun?)</p>
+
+                        <p><strong>📚 Daha fazla örnek:</strong></p>
+                        <ul>
+                            <li><strong>Am I</strong> late? (Ben geç mi kaldım?)</li>
+                            <li><strong>Is he</strong> your brother? (O senin kardeşin mi?)</li>
+                            <li><strong>Are you</strong> tired? (Yorgun musun?)</li>
+                            <li><strong>Is the book</strong> expensive? (Kitap pahalı mı?)</li>
+                            <li><strong>Are they</strong> at home? (Onlar evde mi?)</li>
+                        </ul>
+
+                        <p><strong>💬 Cevaplar:</strong></p>
+                        <ul>
+                            <li>Are you happy? → Yes, I <strong>am</strong>. / No, I'm <strong>not</strong>.</li>
+                            <li>Is she a teacher? → Yes, she <strong>is</strong>. / No, she <strong>isn't</strong>.</li>
+                            <li>Are they students? → Yes, they <strong>are</strong>. / No, they <strong>aren't</strong>.</li>
+                        </ul>
                     </div>
                 `
             },
@@ -334,35 +398,77 @@ const learningData = {
             explanation: {
                 title: "Aile Üyeleri ve İlişkiler",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Possessive Adjectives (İyelik Sıfatları):</strong> Sahiplik belirtme (my, your, his, her)</li>
+                            <li><strong>Family Members (Aile Üyeleri):</strong> Aile kelime dağarcığı</li>
+                        </ul>
+                    </div>
+
+                    <div class="explanation-box">
+                        <h3>📌 Basit Açıklama: İyelik Sıfatları (Possessive Adjectives)</h3>
+                        <p><strong>Ne zaman kullanılır?</strong></p>
+                        <p>Bir şeyin kime ait olduğunu göstermek için:</p>
+                        <ul>
+                            <li>✅ This is <strong>my</strong> book (Bu <strong>benim</strong> kitabım)</li>
+                            <li>✅ <strong>Her</strong> sister is tall (<strong>Onun</strong> kız kardeşi uzun)</li>
+                            <li>✅ <strong>Our</strong> house is big (<strong>Bizim</strong> evimiz büyük)</li>
+                        </ul>
+
+                        <h4>📋 İyelik Sıfatları Tablosu</h4>
+                        <table class="vocab-table">
+                            <tr><th>Zamir (Pronoun)</th><th>İyelik Sıfatı</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td>I (Ben)</td><td><strong>my</strong></td><td>benim</td><td>my mother (annem)</td></tr>
+                            <tr><td>You (Sen/Siz)</td><td><strong>your</strong></td><td>senin/sizin</td><td>your father (baban)</td></tr>
+                            <tr><td>He (O-erkek)</td><td><strong>his</strong></td><td>onun</td><td>his brother (kardeşi)</td></tr>
+                            <tr><td>She (O-kadın)</td><td><strong>her</strong></td><td>onun</td><td>her sister (kız kardeşi)</td></tr>
+                            <tr><td>It (O-nesne)</td><td><strong>its</strong></td><td>onun</td><td>its tail (kuyruğu)</td></tr>
+                            <tr><td>We (Biz)</td><td><strong>our</strong></td><td>bizim</td><td>our family (ailemiz)</td></tr>
+                            <tr><td>They (Onlar)</td><td><strong>their</strong></td><td>onların</td><td>their house (evleri)</td></tr>
+                        </table>
+
+                        <h4>⚡ KURAL: İyelik Sıfatı + İsim</h4>
+                        <p><strong>Yapı:</strong> Possessive Adjective + Noun (İsim)</p>
+                        <ul>
+                            <li>✅ <strong>My</strong> mother (Doğru)</li>
+                            <li>❌ <strong>I</strong> mother (YANLIŞ!)</li>
+                            <li>✅ <strong>His</strong> father (Doğru)</li>
+                            <li>❌ <strong>He</strong> father (YANLIŞ!)</li>
+                        </ul>
+
+                        <p><strong>💡 İpucu:</strong> İyelik sıfatlarından sonra MUTLAKA bir isim gelir!</p>
+                        <ul>
+                            <li>My <strong>book</strong> (kitabım)</li>
+                            <li>Your <strong>name</strong> (adın)</li>
+                            <li>Her <strong>car</strong> (arabası)</li>
+                        </ul>
+
+                        <h4>🔧 Örneklerle Öğren</h4>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Açıklama</th></tr>
+                            <tr><td>This is <strong>my</strong> mother</td><td>Bu benim annem</td><td>Zamir: I → İyelik: my</td></tr>
+                            <tr><td>That is <strong>your</strong> father</td><td>O senin baban</td><td>Zamir: You → İyelik: your</td></tr>
+                            <tr><td><strong>His</strong> brother is tall</td><td>Onun kardeşi uzun</td><td>Zamir: He → İyelik: his</td></tr>
+                            <tr><td><strong>Her</strong> sister is kind</td><td>Onun kız kardeşi nazik</td><td>Zamir: She → İyelik: her</td></tr>
+                            <tr><td><strong>Our</strong> family is big</td><td>Bizim ailemiz büyük</td><td>Zamir: We → İyelik: our</td></tr>
+                            <tr><td><strong>Their</strong> house is nice</td><td>Onların evi güzel</td><td>Zamir: They → İyelik: their</td></tr>
+                        </table>
+                    </div>
+
                     <div class="explanation-box">
                         <h3>👨‍👩‍👧‍👦 Aile Kelimeleri (Family Members)</h3>
                         <table class="vocab-table">
-                            <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                            </tr>
-                            <tr><td><strong>Mother</strong></td><td>Anne</td></tr>
-                            <tr><td><strong>Father</strong></td><td>Baba</td></tr>
-                            <tr><td><strong>Sister</strong></td><td>Kız kardeş</td></tr>
-                            <tr><td><strong>Brother</strong></td><td>Erkek kardeş</td></tr>
-                            <tr><td><strong>Grandmother</strong></td><td>Büyükanne</td></tr>
-                            <tr><td><strong>Grandfather</strong></td><td>Büyükbaba</td></tr>
-                            <tr><td><strong>Daughter</strong></td><td>Kız evlat</td></tr>
-                            <tr><td><strong>Son</strong></td><td>Erkek evlat</td></tr>
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle</th></tr>
+                            <tr><td><strong>Mother</strong></td><td>Anne</td><td>My mother is kind</td></tr>
+                            <tr><td><strong>Father</strong></td><td>Baba</td><td>His father works</td></tr>
+                            <tr><td><strong>Sister</strong></td><td>Kız kardeş</td><td>Her sister is 10</td></tr>
+                            <tr><td><strong>Brother</strong></td><td>Erkek kardeş</td><td>My brother plays</td></tr>
+                            <tr><td><strong>Grandmother</strong></td><td>Büyükanne</td><td>Our grandmother cooks</td></tr>
+                            <tr><td><strong>Grandfather</strong></td><td>Büyükbaba</td><td>Their grandfather reads</td></tr>
+                            <tr><td><strong>Daughter</strong></td><td>Kız evlat</td><td>My daughter is 5</td></tr>
+                            <tr><td><strong>Son</strong></td><td>Erkek evlat</td><td>Your son is smart</td></tr>
                         </table>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>💡 İyelik Sıfatları (Possessive Adjectives)</h3>
-                        <p>Sahiplik belirtmek için kullanılır:</p>
-                        <ul>
-                            <li><strong>My</strong> → Benim (My mother = Benim annem)</li>
-                            <li><strong>Your</strong> → Senin/Sizin</li>
-                            <li><strong>His</strong> → Onun (erkek)</li>
-                            <li><strong>Her</strong> → Onun (kadın)</li>
-                            <li><strong>Our</strong> → Bizim</li>
-                            <li><strong>Their</strong> → Onların</li>
-                        </ul>
-                        <p><em>Örnek:</em> This is my father. (Bu benim babam.)</p>
                     </div>
                 `
             },
@@ -625,60 +731,103 @@ const learningData = {
             explanation: {
                 title: "Günlük Aktiviteler ve Sırası",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Present Simple (Geniş Zaman):</strong> Günlük rutinler ve alışkanlıklar</li>
+                            <li><strong>Time Expressions (Zaman İfadeleri):</strong> every day, always, usually, never</li>
+                            <li><strong>-S/-ES Kuralı:</strong> He/She/It ile fiillere -s/-es ekleme</li>
+                        </ul>
+                    </div>
+
                     <div class="explanation-box">
-                        <h3>⏰ Günlük Fiiller (Daily Verbs)</h3>
+                        <h3>📌 Basit Açıklama: Present Simple - Günlük Rutinler</h3>
+                        <p><strong>Ne zaman kullanılır?</strong></p>
+                        <ul>
+                            <li>✅ Her gün yaptığım şeyler: I wake up at 7 am (Saat 7'de uyanırım)</li>
+                            <li>✅ Alışkanlıklar: She goes to school every day (Her gün okula gider)</li>
+                            <li>✅ Düzenli aktiviteler: We eat lunch at 12 (Saat 12'de öğle yemeği yeriz)</li>
+                        </ul>
+
+                        <h4>🔧 KURAL 1: I/You/We/They + FİİLİN YALIN HALİ</h4>
                         <table class="vocab-table">
-                            <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                            </tr>
-                            <tr><td><strong>Wake up</strong></td><td>Uyanmak</td></tr>
-                            <tr><td><strong>Get up</strong></td><td>Kalkmak</td></tr>
-                            <tr><td><strong>Eat breakfast</strong></td><td>Kahvaltı yapmak</td></tr>
-                            <tr><td><strong>Go to work</strong></td><td>İşe gitmek</td></tr>
-                            <tr><td><strong>Have lunch</strong></td><td>Öğle yemeği yemek</td></tr>
-                            <tr><td><strong>Come home</strong></td><td>Eve gelmek</td></tr>
-                            <tr><td><strong>Watch TV</strong></td><td>TV izlemek</td></tr>
-                            <tr><td><strong>Go to bed</strong></td><td>Yatmak</td></tr>
+                            <tr><th>Özne</th><th>Fiil</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>I</td><td>wake up</td><td>I wake up early</td><td>Erken uyanırım</td></tr>
+                            <tr><td>You</td><td>eat</td><td>You eat breakfast</td><td>Kahvaltı yaparsın</td></tr>
+                            <tr><td>We</td><td>go</td><td>We go to work</td><td>İşe gideriz</td></tr>
+                            <tr><td>They</td><td>watch</td><td>They watch TV</td><td>TV izlerler</td></tr>
                         </table>
+
+                        <h4>🔧 KURAL 2: He/She/It + FİİL + S/ES</h4>
+                        <table class="vocab-table">
+                            <tr><th>Özne</th><th>Yalın Fiil</th><th>+S/-ES</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>He</td><td>wake</td><td>wake<strong>s</strong></td><td>He wakes up</td><td>O uyanır</td></tr>
+                            <tr><td>She</td><td>eat</td><td>eat<strong>s</strong></td><td>She eats</td><td>O yer</td></tr>
+                            <tr><td>He</td><td>watch</td><td>watch<strong>es</strong></td><td>He watches</td><td>O izler</td></tr>
+                            <tr><td>She</td><td>go</td><td>go<strong>es</strong></td><td>She goes</td><td>O gider</td></tr>
+                        </table>
+
+                        <p><strong>💡 İpucu: -ES ne zaman eklenir?</strong></p>
+                        <p>Fiil bu harflerle biterse <strong>-ES</strong> ekleyin:</p>
+                        <ul>
+                            <li>-ch: watch → watch<strong>es</strong> (izler)</li>
+                            <li>-sh: wash → wash<strong>es</strong> (yıkar)</li>
+                            <li>-ss: miss → miss<strong>es</strong> (özler)</li>
+                            <li>-x: fix → fix<strong>es</strong> (tamir eder)</li>
+                            <li>-o: go → go<strong>es</strong> (gider), do → do<strong>es</strong> (yapar)</li>
+                        </ul>
+
+                        <h4>❌ OLUMSUZ (Negative)</h4>
+                        <table class="vocab-table">
+                            <tr><th>Özne</th><th>Olumsuz</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>I/You/We/They</td><td><strong>don't</strong> + fiil</td><td>I don't work</td><td>Çalışmam</td></tr>
+                            <tr><td>He/She/It</td><td><strong>doesn't</strong> + fiil</td><td>She doesn't work</td><td>Çalışmaz</td></tr>
+                        </table>
+
+                        <p><strong>⚠️ ÖNEMLİ:</strong> Olumsuz ve soruda -s/-es DÜŞER!</p>
+                        <ul>
+                            <li>✅ He doesn't work (Doğru - work yalın halde)</li>
+                            <li>❌ He doesn't works (YANLIŞ!)</li>
+                        </ul>
+
+                        <h4>❓ SORU (Questions)</h4>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Do + I/you/we/they + fiil?</td><td>Do you work?</td><td>Çalışıyor musun?</td></tr>
+                            <tr><td>Does + he/she/it + fiil?</td><td>Does she work?</td><td>O çalışıyor mu?</td></tr>
+                        </table>
+
+                        <h4>⏰ Zaman İfadeleri (Frequency Adverbs)</h4>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>%</th><th>Örnek</th></tr>
+                            <tr><td>always</td><td>her zaman</td><td>100%</td><td>I always wake up early</td></tr>
+                            <tr><td>usually</td><td>genellikle</td><td>80%</td><td>She usually eats breakfast</td></tr>
+                            <tr><td>often</td><td>sık sık</td><td>60%</td><td>We often watch TV</td></tr>
+                            <tr><td>sometimes</td><td>bazen</td><td>40%</td><td>He sometimes reads</td></tr>
+                            <tr><td>rarely</td><td>nadiren</td><td>20%</td><td>They rarely go out</td></tr>
+                            <tr><td>never</td><td>asla/hiç</td><td>0%</td><td>I never smoke</td></tr>
+                        </table>
+
+                        <p><strong>💡 İpucu:</strong> Bu kelimeler genelde TO BE fiilinden sonra, normal fiilden ÖNCE gelir:</p>
+                        <ul>
+                            <li>I am <strong>always</strong> happy (TO BE'den sonra)</li>
+                            <li>I <strong>always</strong> eat breakfast (normal fiilden önce)</li>
+                        </ul>
                     </div>
+
                     <div class="explanation-box">
-                        <h3>📐 Cümle Yapısı (Sentence Structure)</h3>
-                        <p>İngilizce cümle düzeni:</p>
-                        <p><strong style="color: #4A90E2;">Özne + Fiil + Nesne</strong></p>
-                        <ul>
-                            <li>I eat breakfast. (Ben kahvaltı yaparım.)</li>
-                            <li>She watches TV. (O TV izler.)</li>
-                            <li>We go to work. (Biz işe gideriz.)</li>
-                        </ul>
-                        <p><em>Önemli:</em> İngilizcede fiil özneden hemen sonra gelir!</p>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>⚡ Simple Present Tense Kuralları</h3>
-                        <p><strong>I/You/We/They</strong> ile fiilin yalın hali kullanılır:</p>
-                        <ul>
-                            <li>I <strong>work</strong> every day. (Her gün çalışırım.)</li>
-                            <li>They <strong>play</strong> football. (Onlar futbol oynar.)</li>
-                        </ul>
-                        <p><strong>He/She/It</strong> ile fiilin sonuna <strong>-s/-es</strong> eklenir:</p>
-                        <ul>
-                            <li>He work<strong>s</strong> every day. (O her gün çalışır.)</li>
-                            <li>She watch<strong>es</strong> TV. (O TV izler.)</li>
-                            <li>It rain<strong>s</strong> a lot. (Çok yağmur yağar.)</li>
-                        </ul>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>🔴 Olumsuz ve Soru (Negative & Questions)</h3>
-                        <p><strong>Olumsuz:</strong> do not (don't) / does not (doesn't) + yalın fiil</p>
-                        <ul>
-                            <li>I <strong>don't work</strong> on Sunday. (Pazar çalışmam.)</li>
-                            <li>She <strong>doesn't like</strong> coffee. (O kahve sevmez.)</li>
-                        </ul>
-                        <p><strong>Soru:</strong> Do/Does + özne + yalın fiil?</p>
-                        <ul>
-                            <li><strong>Do you work</strong>? (Çalışıyor musun?)</li>
-                            <li><strong>Does she work</strong>? (O çalışıyor mu?)</li>
-                        </ul>
+                        <h3>⏰ Günlük Fiiller (Daily Routine Verbs)</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle</th></tr>
+                            <tr><td><strong>Wake up</strong></td><td>Uyanmak</td><td>I wake up at 7 am</td></tr>
+                            <tr><td><strong>Get up</strong></td><td>Kalkmak</td><td>She gets up early</td></tr>
+                            <tr><td><strong>Eat breakfast</strong></td><td>Kahvaltı yapmak</td><td>We eat breakfast together</td></tr>
+                            <tr><td><strong>Go to work</strong></td><td>İşe gitmek</td><td>He goes to work by bus</td></tr>
+                            <tr><td><strong>Have lunch</strong></td><td>Öğle yemeği yemek</td><td>They have lunch at noon</td></tr>
+                            <tr><td><strong>Come home</strong></td><td>Eve gelmek</td><td>I come home at 6 pm</td></tr>
+                            <tr><td><strong>Watch TV</strong></td><td>TV izlemek</td><td>She watches TV at night</td></tr>
+                            <tr><td><strong>Go to bed</strong></td><td>Yatmak</td><td>We go to bed at 11</td></tr>
+                        </table>
                     </div>
                 `
             },
@@ -981,80 +1130,96 @@ const learningData = {
             explanation: {
                 title: "Soru Kelimeleri ve Soru Cümleleri",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Question Words (Soru Kelimeleri):</strong> What, Where, When, Who, Why, How</li>
+                            <li><strong>To Be ile Sorular:</strong> Are you...? Is she...?</li>
+                            <li><strong>Do/Does ile Sorular:</strong> Do you work? Does he like?</li>
+                        </ul>
+                    </div>
+
                     <div class="explanation-box">
-                        <h3>❓ Soru Kelimeleri (Question Words)</h3>
+                        <h3>📌 Basit Açıklama: Soru Kelimeleri (WH-Questions)</h3>
+                        
+                        <h4>❓ Temel Soru Kelimeleri</h4>
                         <table class="vocab-table">
-                            <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                                <th>Örnek</th>
-                            </tr>
-                            <tr>
-                                <td><strong>What</strong></td>
-                                <td>Ne</td>
-                                <td>What is your name?</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Where</strong></td>
-                                <td>Nerede</td>
-                                <td>Where are you?</td>
-                            </tr>
-                            <tr>
-                                <td><strong>When</strong></td>
-                                <td>Ne zaman</td>
-                                <td>When do you work?</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Who</strong></td>
-                                <td>Kim</td>
-                                <td>Who is she?</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Why</strong></td>
-                                <td>Neden</td>
-                                <td>Why are you late?</td>
-                            </tr>
-                            <tr>
-                                <td><strong>How</strong></td>
-                                <td>Nasıl</td>
-                                <td>How are you?</td>
-                            </tr>
+                            <tr><th>Soru Kelimesi</th><th>Türkçe</th><th>Ne Sorar?</th><th>Örnek</th></tr>
+                            <tr><td><strong>What</strong></td><td>Ne</td><td>Şey/Nesne</td><td>What is your name? (Adın ne?)</td></tr>
+                            <tr><td><strong>Where</strong></td><td>Nerede</td><td>Yer</td><td>Where are you? (Neredesin?)</td></tr>
+                            <tr><td><strong>When</strong></td><td>Ne zaman</td><td>Zaman</td><td>When do you work? (Ne zaman çalışırsın?)</td></tr>
+                            <tr><td><strong>Who</strong></td><td>Kim</td><td>Kişi</td><td>Who is she? (O kim?)</td></tr>
+                            <tr><td><strong>Why</strong></td><td>Neden</td><td>Sebep</td><td>Why are you late? (Neden geç kaldın?)</td></tr>
+                            <tr><td><strong>How</strong></td><td>Nasıl</td><td>Şekil/Durum</td><td>How are you? (Nasılsın?)</td></tr>
                         </table>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>🔄 Soru Cümle Yapısı</h3>
-                        <p><strong>To Be</strong> ile soru:</p>
-                        <p><strong>Am/Is/Are + Özne + ?</strong></p>
+
+                        <p><strong>💡 İpucu: HOW ile Özel Sorular</strong></p>
                         <ul>
-                            <li>Are you happy? (Mutlu musun?)</li>
-                            <li>Is she a teacher? (O öğretmen mi?)</li>
+                            <li><strong>How old</strong> = Kaç yaşında? (How old are you?)</li>
+                            <li><strong>How many</strong> = Kaç tane? (How many books?)</li>
+                            <li><strong>How much</strong> = Ne kadar? (How much is it?)</li>
                         </ul>
-                        <p><strong>Soru kelimesi</strong> ile:</p>
-                        <p><strong>Soru kelimesi + am/is/are + Özne + ?</strong></p>
+
+                        <h4>🔧 TO BE ile Soru Yapımı</h4>
+                        <p><strong>Yapı:</strong> TO BE + Özne + ...?</p>
+                        <table class="vocab-table">
+                            <tr><th>Düz Cümle</th><th>Soru</th><th>Türkçe</th></tr>
+                            <tr><td>I am happy</td><td><strong>Am I</strong> happy?</td><td>Mutlu muyum?</td></tr>
+                            <tr><td>You are a student</td><td><strong>Are you</strong> a student?</td><td>Öğrenci misin?</td></tr>
+                            <tr><td>He is at home</td><td><strong>Is he</strong> at home?</td><td>O evde mi?</td></tr>
+                            <tr><td>She is happy</td><td><strong>Is she</strong> happy?</td><td>O mutlu mu?</td></tr>
+                            <tr><td>We are ready</td><td><strong>Are we</strong> ready?</td><td>Hazır mıyız?</td></tr>
+                            <tr><td>They are here</td><td><strong>Are they</strong> here?</td><td>Onlar burada mı?</td></tr>
+                        </table>
+
+                        <p><strong>⚡ Soru Kelimesi + TO BE:</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>Soru Yapısı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>What + is/are</td><td>What is your name?</td><td>Adın ne?</td></tr>
+                            <tr><td>Where + is/are</td><td>Where are you?</td><td>Neredesin?</td></tr>
+                            <tr><td>Who + is/are</td><td>Who is she?</td><td>O kim?</td></tr>
+                            <tr><td>How + is/are</td><td>How are you?</td><td>Nasılsın?</td></tr>
+                        </table>
+
+                        <h4>🔧 DO/DOES ile Soru Yapımı (Normal Fiiller)</h4>
+                        <p><strong>Yapı:</strong> Do/Does + Özne + Yalın Fiil + ...?</p>
+                        
+                        <table class="vocab-table">
+                            <tr><th>Özne</th><th>Yardımcı</th><th>Yapı</th><th>Örnek</th></tr>
+                            <tr><td>I/You/We/They</td><td><strong>Do</strong></td><td>Do + özne + fiil?</td><td>Do you like coffee?</td></tr>
+                            <tr><td>He/She/It</td><td><strong>Does</strong></td><td>Does + özne + fiil?</td><td>Does she like coffee?</td></tr>
+                        </table>
+
+                        <p><strong>⚠️ ÖNEMLİ:</strong> Do/Does kullanınca fiilin sonundaki -s/-es DÜŞER!</p>
                         <ul>
-                            <li>Where are you? (Neredesin?)</li>
-                            <li>What is your name? (Adın ne?)</li>
+                            <li>✅ Does he <strong>work</strong>? (Doğru - yalın fiil)</li>
+                            <li>❌ Does he <strong>works</strong>? (YANLIŞ!)</li>
+                            <li>✅ Do they <strong>go</strong>? (Doğru)</li>
+                            <li>❌ Do they <strong>goes</strong>? (YANLIŞ!)</li>
                         </ul>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>🔍 Normal Fiillerle Soru (Do/Does)</h3>
-                        <p>Normal fiillerle soru yapmak için <strong>Do/Does</strong> kullanılır:</p>
-                        <p><strong>Do/Does + Özne + yalın fiil + ?</strong></p>
+
+                        <p><strong>⚡ Soru Kelimesi + DO/DOES:</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>Soru Yapısı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>What + do/does</td><td>What do you do?</td><td>Ne iş yaparsın?</td></tr>
+                            <tr><td>Where + do/does</td><td>Where does he live?</td><td>O nerede yaşar?</td></tr>
+                            <tr><td>When + do/does</td><td>When do you work?</td><td>Ne zaman çalışırsın?</td></tr>
+                            <tr><td>Why + do/does</td><td>Why do they study?</td><td>Neden çalışırlar?</td></tr>
+                        </table>
+
+                        <h4>✅ Kısa Cevaplar (Short Answers)</h4>
+                        <table class="vocab-table">
+                            <tr><th>Soru</th><th>Evet</th><th>Hayır</th></tr>
+                            <tr><td>Are you happy?</td><td>Yes, I am</td><td>No, I'm not</td></tr>
+                            <tr><td>Is he a student?</td><td>Yes, he is</td><td>No, he isn't</td></tr>
+                            <tr><td>Do you work?</td><td>Yes, I do</td><td>No, I don't</td></tr>
+                            <tr><td>Does she like it?</td><td>Yes, she does</td><td>No, she doesn't</td></tr>
+                        </table>
+
+                        <p><strong>💡 İpucu:</strong> Kısa cevaplarda sadece yardımcı fiili tekrarlayın!</p>
                         <ul>
-                            <li><strong>Do you work?</strong> (Çalışıyor musun?)</li>
-                            <li><strong>Does she speak English?</strong> (O İngilizce konuşur mu?)</li>
-                            <li><strong>Where do you live?</strong> (Nerede yaşıyorsun?)</li>
-                            <li><strong>What does he do?</strong> (O ne iş yapıyor?)</li>
-                        </ul>
-                        <p><em>Önemli:</em> 'Does' kullanıldığında fiilin sonundaki -s/-es düşer!</p>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>💡 Kısa Cevaplar (Short Answers)</h3>
-                        <p>Evet/Hayır soruları için kısa cevaplar:</p>
-                        <ul>
-                            <li>Are you happy? → <strong>Yes, I am.</strong> / <strong>No, I'm not.</strong></li>
-                            <li>Does she work? → <strong>Yes, she does.</strong> / <strong>No, she doesn't.</strong></li>
-                            <li>Do they play? → <strong>Yes, they do.</strong> / <strong>No, they don't.</strong></li>
+                            <li>Are you...? → Yes, I <strong>am</strong> / No, I'm <strong>not</strong></li>
+                            <li>Do you...? → Yes, I <strong>do</strong> / No, I <strong>don't</strong></li>
                         </ul>
                     </div>
                 `
@@ -1356,13 +1521,112 @@ const learningData = {
             explanation: {
                 title: "Tatil ve Seyahat",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Past Simple (Gerekli Zaman):</strong> Düzenli fiiller ile geçmiş zaman</li>
+                            <li><strong>Travel Vocabulary:</strong> Tatil ve seyahat kelimeleri</li>
+                            <li><strong>-ED ekleme kuralları</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="explanation-box">
+                        <h3>📌 Basit Açıklama: Past Simple - Düzgün Fiiller</h3>
+                        <p><strong>Ne zaman kullanılır?</strong></p>
+                        <ul>
+                            <li>✅ Geçmişte olan ve biten eylemler: I visited Paris (Paris'i ziyaret ettim)</li>
+                            <li>✅ Geçmişte bir anda olan şeyler: She arrived yesterday (Dün vardı)</li>
+                            <li>✅ Geçmişte tekrar tekrar olan eylemler: We played every day (Her gün oynadık)</li>
+                        </ul>
+
+                        <h4>🔧 KURAL: Fiil + ED</h4>
+                        <p>Düzgün fiillere (regular verbs) geçmiş zaman için <strong>-ED</strong> eklenir:</p>
+                        <table class="vocab-table">
+                            <tr><th>Şimdiki Zaman</th><th>Geçmiş Zaman</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td>visit</td><td>visit<strong>ed</strong></td><td>ziyaret etti</td><td>I visited Spain</td></tr>
+                            <tr><td>play</td><td>play<strong>ed</strong></td><td>oynadı</td><td>They played football</td></tr>
+                            <tr><td>walk</td><td>walk<strong>ed</strong></td><td>yürüdü</td><td>We walked in the park</td></tr>
+                            <tr><td>stay</td><td>stay<strong>ed</strong></td><td>kaldı</td><td>She stayed in a hotel</td></tr>
+                        </table>
+
+                        <h4>⚡ Özel Kurallar: -ED nasıl eklenir?</h4>
+                        
+                        <p><strong>1. Normal fiiller → +ED</strong></p>
+                        <ul>
+                            <li>work → work<strong>ed</strong> (çalıştı)</li>
+                            <li>help → help<strong>ed</strong> (yardım etti)</li>
+                        </ul>
+
+                        <p><strong>2. Fiil 'e' ile bitiyorsa → +D</strong></p>
+                        <ul>
+                            <li>live → live<strong>d</strong> (yaşadı)</li>
+                            <li>arrive → arrive<strong>d</strong> (vardı)</li>
+                        </ul>
+
+                        <p><strong>3. Fiil 'sessiz harf + y' ile bitiyorsa → y→ied</strong></p>
+                        <ul>
+                            <li>study → stud<strong>ied</strong> (çalıştı)</li>
+                            <li>try → tr<strong>ied</strong> (denedi)</li>
+                        </ul>
+
+                        <p><strong>4. Kısa fiil, tek sessiz harfle bitiyorsa → harf ikileşir</strong></p>
+                        <ul>
+                            <li>stop → sto<strong>pped</strong> (durdu)</li>
+                            <li>plan → pla<strong>nned</strong> (planlandı)</li>
+                        </ul>
+
+                        <h4>❌ OLUMSUZ: DIDN'T + YALIN FİİL</h4>
+                        <table class="vocab-table">
+                            <tr><th>Olumlu</th><th>Olumsuz</th><th>Türkçe</th></tr>
+                            <tr><td>I visited Paris</td><td>I <strong>didn't visit</strong> Paris</td><td>Paris'i ziyaret etmedim</td></tr>
+                            <tr><td>She played tennis</td><td>She <strong>didn't play</strong> tennis</td><td>Tenis oynamadı</td></tr>
+                        </table>
+
+                        <p><strong>⚠️ ÖNEMLİ:</strong> Olumsuzda -ED DÜŞER!</p>
+                        <ul>
+                            <li>✅ I didn't visit (Doğru - yalın fiil)</li>
+                            <li>❌ I didn't visited (YANLIŞ!)</li>
+                        </ul>
+
+                        <h4>❓ SORU: DID + ÖZNE + YALIN FİİL?</h4>
+                        <table class="vocab-table">
+                            <tr><th>Olumlu</th><th>Soru</th><th>Türkçe</th></tr>
+                            <tr><td>You visited Paris</td><td><strong>Did you visit</strong> Paris?</td><td>Paris'i ziyaret ettin mi?</td></tr>
+                            <tr><td>They played tennis</td><td><strong>Did they play</strong> tennis?</td><td>Tenis oynadılar mı?</td></tr>
+                        </table>
+
+                        <p><strong>💡 Kısa Cevaplar:</strong></p>
+                        <ul>
+                            <li>Did you visit? → Yes, I <strong>did</strong> / No, I <strong>didn't</strong></li>
+                            <li>Did she like it? → Yes, she <strong>did</strong> / No, she <strong>didn't</strong></li>
+                        </ul>
+
+                        <h4>⏰ Past Simple ile Kullanılan Zaman İfadeleri</h4>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td>yesterday</td><td>dün</td><td>I visited yesterday</td></tr>
+                            <tr><td>last week</td><td>geçen hafta</td><td>She arrived last week</td></tr>
+                            <tr><td>last year</td><td>geçen yıl</td><td>We traveled last year</td></tr>
+                            <tr><td>two days ago</td><td>iki gün önce</td><td>He called two days ago</td></tr>
+                            <tr><td>in 2020</td><td>2020'de</td><td>They moved in 2020</td></tr>
+                        </table>
+                    </div>
+
                     <div class="explanation-box">
                         <h3>✈️ Tatil Kelimeleri (Holiday Vocabulary)</h3>
                         <table class="vocab-table">
-                            <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                            </tr>
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle (Past Simple)</th></tr>
+                            <tr><td><strong>Passport</strong></td><td>Pasaport</td><td>I showed my passport</td></tr>
+                            <tr><td><strong>Ticket</strong></td><td>Bilet</td><td>She bought a ticket</td></tr>
+                            <tr><td><strong>Hotel</strong></td><td>Otel</td><td>We stayed in a hotel</td></tr>
+                            <tr><td><strong>Beach</strong></td><td>Plaj</td><td>They walked on the beach</td></tr>
+                            <tr><td><strong>Airport</strong></td><td>Havalimanı</td><td>I arrived at the airport</td></tr>
+                            <tr><td><strong>Suitcase</strong></td><td>Bavul</td><td>He packed his suitcase</td></tr>
+                            <tr><td><strong>Camera</strong></td><td>Fotoğraf makinesi</td><td>She used her camera</td></tr>
+                        </table>
+                    </div>
+                `
+            },
                             <tr><td><strong>Beach</strong></td><td>Plaj</td></tr>
                             <tr><td><strong>Hotel</strong></td><td>Otel</td></tr>
                             <tr><td><strong>Airport</strong></td><td>Havalimanı</td></tr>
@@ -1650,32 +1914,103 @@ const learningData = {
             explanation: {
                 title: "Alışveriş ve Para",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Countable/Uncountable Nouns:</strong> Sayılabilen ve sayılamayan isimler</li>
+                            <li><strong>Some/Any:</strong> Miktar belirtme (biraz, hiç)</li>
+                            <li><strong>How much/How many:</strong> Ne kadar? / Kaç tane?</li>
+                        </ul>
+                    </div>
+
+                    <div class="explanation-box">
+                        <h3>📌 Basit Açıklama: Sayılabilen ve Sayılamayan İsimler</h3>
+                        
+                        <h4>🔢 Sayılabilen İsimler (Countable Nouns)</h4>
+                        <p>Tane tane sayabileceğimiz şeyler:</p>
+                        <table class="vocab-table">
+                            <tr><th>Tekil (Singular)</th><th>Çoğul (Plural)</th><th>Türkçe</th></tr>
+                            <tr><td><strong>a</strong> book</td><td>two <strong>books</strong></td><td>kitap/kitaplar</td></tr>
+                            <tr><td><strong>an</strong> apple</td><td>five <strong>apples</strong></td><td>elma/elmalar</td></tr>
+                            <tr><td><strong>a</strong> shirt</td><td>many <strong>shirts</strong></td><td>gömlek/gömlekler</td></tr>
+                        </table>
+
+                        <p><strong>💡 İpucu:</strong> Sayılabilen isimlerin çoğulu vardır ve sayı ile kullanılır!</p>
+                        <ul>
+                            <li>one apple, two apples, three apples</li>
+                            <li>a/an ile tekil kullanılır: <strong>a</strong> book, <strong>an</strong> orange</li>
+                        </ul>
+
+                        <h4>💧 Sayılamayan İsimler (Uncountable Nouns)</h4>
+                        <p>Tane tane sayamadığımız şeyler (sıvılar, malzemeler, soyut kavramlar):</p>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td>water</td><td>su</td><td>I need water</td></tr>
+                            <tr><td>money</td><td>para</td><td>He has money</td></tr>
+                            <tr><td>bread</td><td>ekmek</td><td>We buy bread</td></tr>
+                            <tr><td>milk</td><td>süt</td><td>She drinks milk</td></tr>
+                        </table>
+
+                        <p><strong>⚠️ ÖNEMLİ:</strong> Sayılamayan isimlerle:</p>
+                        <ul>
+                            <li>❌ <strong>a/an</strong> kullanılmaz: ❌ a water, ❌ a money</li>
+                            <li>❌ Çoğul yapılmaz: ❌ waters, ❌ moneys</li>
+                            <li>✅ Daima tekil fiil kullanılır: Money <strong>is</strong> important</li>
+                        </ul>
+
+                        <h4>✨ SOME ve ANY Kullanımı</h4>
+                        
+                        <p><strong>SOME = biraz, birkaç (Olumlu cümlelerde)</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>Kullanım</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Sayılabilen (çoğul)</td><td>I have <strong>some</strong> books</td><td>Birkaç kitabım var</td></tr>
+                            <tr><td>Sayılamayan</td><td>I want <strong>some</strong> water</td><td>Biraz su istiyorum</td></tr>
+                        </table>
+
+                        <p><strong>ANY = hiç (Olumsuz ve sorularda)</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>Kullanım</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Olumsuz</td><td>I don't have <strong>any</strong> money</td><td>Hiç param yok</td></tr>
+                            <tr><td>Soru</td><td>Do you have <strong>any</strong> apples?</td><td>Hiç elma var mı?</td></tr>
+                        </table>
+
+                        <p><strong>📋 SOME/ANY Kuralı:</strong></p>
+                        <ul>
+                            <li>✅ Olumlu cümle → <strong>SOME</strong> (I have some bread)</li>
+                            <li>✅ Olumsuz cümle → <strong>ANY</strong> (I don't have any bread)</li>
+                            <li>✅ Soru cümlesi → <strong>ANY</strong> (Do you have any bread?)</li>
+                            <li>⚠️ İstisna: Teklif sorularında SOME (Would you like some tea?)</li>
+                        </ul>
+
+                        <h4>❓ HOW MUCH / HOW MANY</h4>
+                        
+                        <table class="vocab-table">
+                            <tr><th>Soru</th><th>Kullanım</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td><strong>How many</strong></td><td>Sayılabilen isimlerle</td><td>How many books?</td><td>Kaç kitap?</td></tr>
+                            <tr><td><strong>How much</strong></td><td>Sayılamayan isimlerle</td><td>How much water?</td><td>Ne kadar su?</td></tr>
+                            <tr><td><strong>How much</strong></td><td>Fiyat sormak için</td><td>How much is it?</td><td>Ne kadar (para)?</td></tr>
+                        </table>
+
+                        <p><strong>💡 İpucu:</strong></p>
+                        <ul>
+                            <li>How <strong>many</strong> (kaç) + sayılabilen isim (çoğul)</li>
+                            <li>How <strong>much</strong> (ne kadar) + sayılamayan isim</li>
+                        </ul>
+                    </div>
+
                     <div class="explanation-box">
                         <h3>🛒 Alışveriş Kelimeleri (Shopping Vocabulary)</h3>
                         <table class="vocab-table">
-                            <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                            </tr>
-                            <tr><td><strong>Shop/Store</strong></td><td>Mağaza</td></tr>
-                            <tr><td><strong>Price</strong></td><td>Fiyat</td></tr>
-                            <tr><td><strong>Money</strong></td><td>Para</td></tr>
-                            <tr><td><strong>Buy</strong></td><td>Satın almak</td></tr>
-                            <tr><td><strong>Sell</strong></td><td>Satmak</td></tr>
-                            <tr><td><strong>Expensive</strong></td><td>Pahalı</td></tr>
-                            <tr><td><strong>Cheap</strong></td><td>Ucuz</td></tr>
-                            <tr><td><strong>Discount</strong></td><td>İndirim</td></tr>
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle</th></tr>
+                            <tr><td><strong>Shop/Store</strong></td><td>Mağaza</td><td>I go to the shop</td></tr>
+                            <tr><td><strong>Price</strong></td><td>Fiyat</td><td>What's the price?</td></tr>
+                            <tr><td><strong>Money</strong></td><td>Para</td><td>I need some money</td></tr>
+                            <tr><td><strong>Buy</strong></td><td>Satın almak</td><td>I want to buy this</td></tr>
+                            <tr><td><strong>Sell</strong></td><td>Satmak</td><td>They sell clothes</td></tr>
+                            <tr><td><strong>Expensive</strong></td><td>Pahalı</td><td>It's too expensive</td></tr>
+                            <tr><td><strong>Cheap</strong></td><td>Ucuz</td><td>This is cheap</td></tr>
+                            <tr><td><strong>Discount</strong></td><td>İndirim</td><td>Is there a discount?</td></tr>
                         </table>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>💰 Alışveriş Cümleleri</h3>
-                        <ul>
-                            <li>How much is this? (Bu ne kadar?)</li>
-                            <li>It's too expensive. (Çok pahalı.)</li>
-                            <li>I want to buy this. (Bunu almak istiyorum.)</li>
-                            <li>Do you have a discount? (İndiriminiz var mı?)</li>
-                            <li>Can I pay by card? (Kartla ödeyebilir miyim?)</li>
-                        </ul>
                     </div>
                 `
             },
@@ -1972,96 +2307,172 @@ const learningData = {
             level: "B1",
             grammar: ["past_simple_irregular", "modal_verbs_should_must"],
             explanation: {
-                title: "Gesundheit und medizinische Versorgung",
+                title: "Sağlık ve Doktor Ziyareti",
                 content: `
                     <div class="explanation-box">
                         <div class="grammar-focus">
-                            <h4>🎯 Grammatik-Fokus</h4>
+                            <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
                             <ul>
-                                <li><strong>Past Simple (irregular):</strong> I felt sick, I went to the doctor</li>
-                                <li><strong>Modal verbs:</strong> should, must, have to (Ratschläge & Pflichten)</li>
+                                <li><strong>Past Simple (Düzensiz Fiiller):</strong> Geçmişte olan şeyler (I felt sick - Kendimi hasta hissettim)</li>
+                                <li><strong>Modal Fiiller:</strong> should (tavsiye), must (zorunluluk), have to (mecburiyet)</li>
                             </ul>
                         </div>
 
-                        <h3>🏥 Körperteile (Body Parts)</h3>
+                        <h3>⚕️ GRAMATİK: Past Simple - Düzensiz Fiiller (Geçmiş Zaman)</h3>
+                        
+                        <p><strong>📌 Basit Açıklama:</strong> Türkçede "dün, geçen hafta, geçen yıl" gibi geçmişte olan şeyleri anlatırken "Geçmiş Zaman (Past Simple)" kullanırız.</p>
+                        
+                        <div class="grammar-focus">
+                            <h4>🔍 Düzenli ve Düzensiz Fiiller Nedir?</h4>
+                            <p><strong>Düzenli Fiiller:</strong> Sonuna -ed eklenir (walk → walk<strong>ed</strong>)</p>
+                            <p><strong>Düzensiz Fiiller:</strong> Tamamen değişir! (go → <strong>went</strong>, NOT goed ❌)</p>
+                            <p>💡 <strong>ÖNEMLİ:</strong> Düzensiz fiilleri EZBERLEMEN gerekir. Kural yok!</p>
+                        </div>
+
+                        <p><strong>📚 Sağlıkla İlgili Önemli Düzensiz Fiiller:</strong></p>
                         <table class="vocab-table">
                             <tr>
-                                <th>İngilizce</th>
+                                <th>Şimdiki Zaman</th>
+                                <th>Geçmiş Zaman</th>
                                 <th>Türkçe</th>
-                                <th>Örnek</th>
+                                <th>Örnek Cümle</th>
                             </tr>
-                            <tr><td><strong>head</strong></td><td>baş</td><td>My head hurts.</td></tr>
-                            <tr><td><strong>throat</strong></td><td>boğaz</td><td>I have a sore throat.</td></tr>
-                            <tr><td><strong>stomach</strong></td><td>mide</td><td>My stomach aches.</td></tr>
-                            <tr><td><strong>back</strong></td><td>sırt</td><td>I hurt my back.</td></tr>
-                            <tr><td><strong>arm</strong></td><td>kol</td><td>I broke my arm.</td></tr>
-                            <tr><td><strong>leg</strong></td><td>bacak</td><td>My leg is swollen.</td></tr>
-                            <tr><td><strong>chest</strong></td><td>göğüs</td><td>I have chest pain.</td></tr>
-                        </table>
-
-                        <h3>🤒 Symptome (Symptoms)</h3>
-                        <table class="vocab-table">
                             <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                                <th>Örnek</th>
+                                <td>feel</td>
+                                <td><strong>felt</strong></td>
+                                <td>hissetmek</td>
+                                <td>I <strong>felt</strong> sick yesterday. (Dün kendimi hasta hissettim.)</td>
                             </tr>
-                            <tr><td><strong>fever</strong></td><td>ateş</td><td>I have a high fever.</td></tr>
-                            <tr><td><strong>cough</strong></td><td>öksürük</td><td>I can't stop coughing.</td></tr>
-                            <tr><td><strong>cold</strong></td><td>soğuk algınlığı</td><td>I caught a cold.</td></tr>
-                            <tr><td><strong>flu</strong></td><td>grip</td><td>She has the flu.</td></tr>
-                            <tr><td><strong>headache</strong></td><td>baş ağrısı</td><td>I have a terrible headache.</td></tr>
-                            <tr><td><strong>dizzy</strong></td><td>başı dönen</td><td>I feel dizzy.</td></tr>
-                            <tr><td><strong>nauseous</strong></td><td>mide bulantısı</td><td>I feel nauseous.</td></tr>
-                        </table>
-
-                        <h3>💊 Beim Arzt (At the Doctor's)</h3>
-                        <table class="vocab-table">
                             <tr>
-                                <th>İngilizce</th>
-                                <th>Türkçe</th>
-                                <th>Örnek</th>
+                                <td>go</td>
+                                <td><strong>went</strong></td>
+                                <td>gitmek</td>
+                                <td>I <strong>went</strong> to the doctor. (Doktora gittim.)</td>
                             </tr>
-                            <tr><td><strong>appointment</strong></td><td>randevu</td><td>I'd like to make an appointment.</td></tr>
-                            <tr><td><strong>prescription</strong></td><td>reçete</td><td>The doctor gave me a prescription.</td></tr>
-                            <tr><td><strong>medicine</strong></td><td>ilaç</td><td>Take this medicine twice a day.</td></tr>
-                            <tr><td><strong>treatment</strong></td><td>tedavi</td><td>What treatment do you recommend?</td></tr>
-                            <tr><td><strong>pain</strong></td><td>ağrı</td><td>Where is the pain?</td></tr>
-                            <tr><td><strong>examination</strong></td><td>muayene</td><td>I need an examination.</td></tr>
-                        </table>
-
-                        <h3>⚕️ Past Simple - Unregelmäßige Verben</h3>
-                        <table class="vocab-table">
                             <tr>
-                                <th>Base Form</th>
-                                <th>Past Simple</th>
-                                <th>Türkçe</th>
-                                <th>Örnek</th>
+                                <td>have</td>
+                                <td><strong>had</strong></td>
+                                <td>sahip olmak</td>
+                                <td>I <strong>had</strong> a fever. (Ateşim vardı.)</td>
                             </tr>
-                            <tr><td>feel</td><td><strong>felt</strong></td><td>hissetmek</td><td>I <strong>felt</strong> sick yesterday.</td></tr>
-                            <tr><td>go</td><td><strong>went</strong></td><td>gitmek</td><td>I <strong>went</strong> to the doctor.</td></tr>
-                            <tr><td>have</td><td><strong>had</strong></td><td>sahip olmak</td><td>I <strong>had</strong> a fever.</td></tr>
-                            <tr><td>take</td><td><strong>took</strong></td><td>almak</td><td>I <strong>took</strong> medicine.</td></tr>
-                            <tr><td>break</td><td><strong>broke</strong></td><td>kırmak</td><td>He <strong>broke</strong> his arm.</td></tr>
-                            <tr><td>hurt</td><td><strong>hurt</strong></td><td>acımak/zarar vermek</td><td>My back <strong>hurt</strong>.</td></tr>
+                            <tr>
+                                <td>take</td>
+                                <td><strong>took</strong></td>
+                                <td>almak</td>
+                                <td>I <strong>took</strong> medicine. (İlaç aldım.)</td>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td><strong>broke</strong></td>
+                                <td>kırmak</td>
+                                <td>He <strong>broke</strong> his arm. (Kolunu kırdı.)</td>
+                            </tr>
+                            <tr>
+                                <td>hurt</td>
+                                <td><strong>hurt</strong></td>
+                                <td>acımak/incinmek</td>
+                                <td>My back <strong>hurt</strong>. (Sırtım ağrıdı.) - Aynı şekil!</td>
+                            </tr>
                         </table>
 
-                        <h3>💬 Modal Verbs: Should & Must</h3>
-                        <div class="explanation-box">
-                            <p><strong>Should</strong> = Tavsiye (solltest/sollten)</p>
+                        <p><strong>✅ Daha Fazla Örnek:</strong></p>
+                        <ul>
+                            <li>Yesterday, I <strong>felt</strong> terrible. (Dün çok kötü hissettim.)</li>
+                            <li>Last week, she <strong>went</strong> to the hospital. (Geçen hafta hastaneye gitti.)</li>
+                            <li>I <strong>had</strong> a headache two days ago. (İki gün önce başım ağrıyordu.)</li>
+                            <li>He <strong>took</strong> medicine this morning. (Bu sabah ilaç aldı.)</li>
+                            <li>She <strong>broke</strong> her leg last year. (Geçen yıl bacağını kırdı.)</li>
+                        </ul>
+
+                        <h3>💬 GRAMATİK: Modal Fiiller - Should, Must, Have to</h3>
+                        
+                        <p><strong>📌 Basit Açıklama:</strong> Bu fiiller tavsiye vermek veya zorunluluk bildirmek için kullanılır.</p>
+
+                        <div class="grammar-focus">
+                            <h4>1️⃣ SHOULD (Tavsiye - "...-meli/malı")</h4>
+                            <p><strong>Ne zaman kullanılır?</strong> Birilerine öneri vermek, tavsiyede bulunmak için.</p>
+                            <p><strong>Formül:</strong> Özne + <strong>should</strong> + fiilin yalın hali</p>
+                            
+                            <p><strong>Örnekler:</strong></p>
                             <ul>
-                                <li>You <strong>should</strong> rest. (Dinlenmelisin.)</li>
+                                <li>You <strong>should</strong> rest. (Dinlenmelisin.) - Tavsiye!</li>
                                 <li>You <strong>should</strong> drink more water. (Daha fazla su içmelisin.)</li>
-                                <li>You <strong>shouldn't</strong> smoke. (Sigara içmemelisin.)</li>
+                                <li>He <strong>should</strong> see a doctor. (Doktora görünmeli.)</li>
+                                <li>You <strong>shouldn't</strong> smoke. (Sigara içmemelisin.) - Olumsuz tavsiye</li>
+                                <li>She <strong>shouldn't</strong> eat junk food. (Abur cubur yememeli.)</li>
                             </ul>
-                            <br>
-                            <p><strong>Must / Have to</strong> = Zorunluluk (muss/müssen)</p>
+                            <p>💡 <strong>Not:</strong> "Should"dan sonra fiilin sonuna -s/-ed eklenmez!</p>
                             <ul>
-                                <li>You <strong>must</strong> take this medicine. (Bu ilacı almalısın - zorundasın.)</li>
-                                <li>I <strong>have to</strong> go to the hospital. (Hastaneye gitmeliyim - zorundayım.)</li>
-                                <li>You <strong>mustn't</strong> drive. (Araba kullanmamalısın - yasak.)</li>
+                                <li>He should <strong>go</strong>. ✓ (NOT: He should go<strong>es</strong> ❌)</li>
                             </ul>
                         </div>
+
+                        <div class="grammar-focus">
+                            <h4>2️⃣ MUST (Güçlü Zorunluluk - "Mecbursun/Şart")</h4>
+                            <p><strong>Ne zaman kullanılır?</strong> Kesin zorunluluk, kural, ya da çok güçlü tavsiye için.</p>
+                            <p><strong>Formül:</strong> Özne + <strong>must</strong> + fiilin yalın hali</p>
+                            
+                            <p><strong>Örnekler:</strong></p>
+                            <ul>
+                                <li>You <strong>must</strong> take this medicine. (Bu ilacı almalısın - kesinlikle!)</li>
+                                <li>I <strong>must</strong> go to the hospital. (Hastaneye gitmeliyim - acil!)</li>
+                                <li>We <strong>must</strong> follow the doctor's advice. (Doktorun tavsiyesine uymalıyız.)</li>
+                                <li>You <strong>mustn't</strong> drive when you're sick. (Hastayken araba kullanma - yasak!)</li>
+                                <li>You <strong>mustn't</strong> eat before the surgery. (Ameliyattan önce yemek yeme - yasak!)</li>
+                            </ul>
+                            <p>⚠️ <strong>Dikkat:</strong> "Mustn't" = YASAK (yapmamalısın - yasaklanmış)</p>
+                        </div>
+
+                        <div class="grammar-focus">
+                            <h4>3️⃣ HAVE TO (Zorunluluk - "Zorundayım/Gerekiyor")</h4>
+                            <p><strong>Ne zaman kullanılır?</strong> Dış sebepler yüzünden yapmak zorunda olduğun şeyler için.</p>
+                            <p><strong>Formül:</strong> Özne + <strong>have to / has to</strong> + fiilin yalın hali</p>
+                            
+                            <p><strong>Örnekler:</strong></p>
+                            <ul>
+                                <li>I <strong>have to</strong> go to the dentist. (Dişçiye gitmek zorundayım.)</li>
+                                <li>She <strong>has to</strong> take medicine daily. (Günlük ilaç almak zorunda.) - 3. tekil şahıs!</li>
+                                <li>We <strong>have to</strong> wait for the test results. (Test sonuçlarını beklemek zorundayız.)</li>
+                                <li>You <strong>don't have to</strong> stay in bed. (Yatakta kalmak zorunda değilsin.) - Gerek yok</li>
+                            </ul>
+                            <p>💡 <strong>Fark:</strong></p>
+                            <ul>
+                                <li><strong>Must:</strong> Kişisel görüş ("Bence yapmalısın!")</li>
+                                <li><strong>Have to:</strong> Dışardan gelen kural ("Kurallara göre yapmalısın.")</li>
+                            </ul>
+                        </div>
+
+                        <h3>🩺 Sağlık Kelimeleri (Vocabulary)</h3>
+                        
+                        <p><strong>Vücut Bölümleri (Body Parts):</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle</th></tr>
+                            <tr><td><strong>head</strong></td><td>baş</td><td>My <strong>head</strong> hurts. (Başım ağrıyor.)</td></tr>
+                            <tr><td><strong>throat</strong></td><td>boğaz</td><td>I have a sore <strong>throat</strong>. (Boğazım ağrıyor.)</td></tr>
+                            <tr><td><strong>stomach</strong></td><td>mide</td><td>My <strong>stomach</strong> aches. (Midem ağrıyor.)</td></tr>
+                            <tr><td><strong>back</strong></td><td>sırt</td><td>I hurt my <strong>back</strong>. (Sırtımı incittim.)</td></tr>
+                            <tr><td><strong>arm</strong></td><td>kol</td><td>I broke my <strong>arm</strong>. (Kolumu kırdım.)</td></tr>
+                            <tr><td><strong>leg</strong></td><td>bacak</td><td>My <strong>leg</strong> is swollen. (Bacağım şişti.)</td></tr>
+                        </table>
+
+                        <p><strong>Belirtiler (Symptoms):</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle</th></tr>
+                            <tr><td><strong>fever</strong></td><td>ateş</td><td>I have a high <strong>fever</strong>. (Yüksek ateşim var.)</td></tr>
+                            <tr><td><strong>cough</strong></td><td>öksürük</td><td>I can't stop <strong>coughing</strong>. (Öksürüğü durduramıyorum.)</td></tr>
+                            <tr><td><strong>cold</strong></td><td>soğuk algınlığı</td><td>I caught a <strong>cold</strong>. (Soğuk algınlığına yakalandım.)</td></tr>
+                            <tr><td><strong>flu</strong></td><td>grip</td><td>She has the <strong>flu</strong>. (Gribi var.)</td></tr>
+                            <tr><td><strong>headache</strong></td><td>baş ağrısı</td><td>I have a terrible <strong>headache</strong>. (Berbat bir baş ağrım var.)</td></tr>
+                        </table>
+
+                        <p><strong>Doktorda (At the Doctor's):</strong></p>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek Cümle</th></tr>
+                            <tr><td><strong>appointment</strong></td><td>randevu</td><td>I'd like to make an <strong>appointment</strong>. (Randevu almak istiyorum.)</td></tr>
+                            <tr><td><strong>prescription</strong></td><td>reçete</td><td>The doctor gave me a <strong>prescription</strong>. (Doktor reçete verdi.)</td></tr>
+                            <tr><td><strong>medicine</strong></td><td>ilaç</td><td>Take this <strong>medicine</strong> twice a day. (Bu ilacı günde iki kez al.)</td></tr>
+                            <tr><td><strong>treatment</strong></td><td>tedavi</td><td>What <strong>treatment</strong> do you recommend? (Hangi tedaviyi önerirsiniz?)</td></tr>
+                        </table>
                     </div>
                 `
             },
@@ -2331,50 +2742,109 @@ const learningData = {
             explanation: {
                 title: "Beruf und Arbeitsleben",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Present Perfect:</strong> Geçmiş ile şimdiki zaman arasındaki bağlantı</li>
+                            <li><strong>Kullanım:</strong> Deneyimler, özgeçmiş, şimdiki zamana etkisi olan geçmiş eylemler</li>
+                            <li><strong>Sinyal Kelimeler:</strong> already, yet, just, ever, never, for, since</li>
+                        </ul>
+                    </div>
+
                     <div class="explanation-box">
-                        <div class="grammar-focus">
-                            <h4>🎯 Grammatik-Fokus</h4>
-                            <ul>
-                                <li><strong>Present Perfect:</strong> have/has + past participle</li>
-                                <li><strong>Verwendung:</strong> Erfahrungen, Lebenslauf, abgeschlossene Handlungen mit Bezug zur Gegenwart</li>
-                                <li><strong>Signalwörter:</strong> already, yet, just, ever, never, for, since</li>
-                            </ul>
-                        </div>
+                        <h3>📌 Basit Açıklama: Present Perfect Tense</h3>
+                        <p><strong>Ne zaman kullanılır?</strong></p>
+                        <ul>
+                            <li>✅ Hayat deneyimleri: I have visited Paris (Paris'i ziyaret ettim - hayatımda)</li>
+                            <li>✅ Henüz devam eden durumlar: She has worked here for 5 years (5 yıldır burada çalışıyor - hala)</li>
+                            <li>✅ Yeni olan eylemler: He has just arrived (Az önce geldi)</li>
+                            <li>✅ Şimdiye kadar olan/olmayan: I have never seen this (Bunu hiç görmedim)</li>
+                        </ul>
 
-                        <h3>💼 Berufe (Jobs & Professions)</h3>
+                        <h4>🔧 YAPI: HAVE/HAS + PAST PARTICIPLE (3. HAL)</h4>
                         <table class="vocab-table">
-                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
-                            <tr><td><strong>accountant</strong></td><td>muhasebeci</td><td>She has worked as an accountant for 5 years.</td></tr>
-                            <tr><td><strong>engineer</strong></td><td>mühendis</td><td>I have been an engineer since 2018.</td></tr>
-                            <tr><td><strong>manager</strong></td><td>müdür</td><td>He has just become a manager.</td></tr>
+                            <tr><th>Özne</th><th>Yardımcı Fiil</th><th>Geçmiş Ortaç</th><th>Örnek</th></tr>
+                            <tr><td>I/You/We/They</td><td><strong>have</strong></td><td>worked</td><td>I have worked</td></tr>
+                            <tr><td>He/She/It</td><td><strong>has</strong></td><td>worked</td><td>She has worked</td></tr>
+                        </table>
+
+                        <p><strong>💡 İpucu: Past Participle (3. Hal) nedir?</strong></p>
+                        <ul>
+                            <li>Düzenli fiillerde: fiil + ED (work → work<strong>ed</strong>, play → play<strong>ed</strong>)</li>
+                            <li>Düzensiz fiillerde: özel form (go → <strong>gone</strong>, see → <strong>seen</strong>, do → <strong>done</strong>)</li>
+                        </ul>
+
+                        <h4>📋 Yaygın Past Participle Tablosu</h4>
+                        <table class="vocab-table">
+                            <tr><th>Yalın Hal</th><th>Past Simple</th><th>Past Participle</th><th>Türkçe</th></tr>
+                            <tr><td>work</td><td>worked</td><td>work<strong>ed</strong></td><td>çalışmak</td></tr>
+                            <tr><td>be</td><td>was/were</td><td><strong>been</strong></td><td>olmak</td></tr>
+                            <tr><td>go</td><td>went</td><td><strong>gone</strong></td><td>gitmek</td></tr>
+                            <tr><td>see</td><td>saw</td><td><strong>seen</strong></td><td>görmek</td></tr>
+                            <tr><td>do</td><td>did</td><td><strong>done</strong></td><td>yapmak</td></tr>
+                            <tr><td>have</td><td>had</td><td><strong>had</strong></td><td>sahip olmak</td></tr>
+                            <tr><td>write</td><td>wrote</td><td><strong>written</strong></td><td>yazmak</td></tr>
+                        </table>
+
+                        <h4>✅ OLUMLU CÜMLE</h4>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>I/You/We/They + have + P.P.</td><td>I have worked here</td><td>Burada çalıştım</td></tr>
+                            <tr><td>He/She/It + has + P.P.</td><td>She has finished</td><td>Bitirdi</td></tr>
+                        </table>
+
+                        <h4>❌ OLUMSUZ CÜMLE</h4>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>haven't + P.P.</td><td>I haven't seen him</td><td>Onu görmedim</td></tr>
+                            <tr><td>hasn't + P.P.</td><td>She hasn't arrived</td><td>Varmadı (henüz)</td></tr>
+                        </table>
+
+                        <h4>❓ SORU CÜMLESI</h4>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Have + özne + P.P.?</td><td>Have you worked?</td><td>Çalıştın mı?</td></tr>
+                            <tr><td>Has + özne + P.P.?</td><td>Has she finished?</td><td>Bitirdi mi?</td></tr>
+                        </table>
+
+                        <h4>⏰ Sinyal Kelimeler (Signal Words)</h4>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Kullanım</th><th>Örnek</th></tr>
+                            <tr><td><strong>just</strong></td><td>az önce</td><td>Yeni biten eylem</td><td>I have <strong>just</strong> finished</td></tr>
+                            <tr><td><strong>already</strong></td><td>zaten/çoktan</td><td>Beklentiden önce</td><td>She has <strong>already</strong> left</td></tr>
+                            <tr><td><strong>yet</strong></td><td>henüz (olumsuz/soru)</td><td>Beklenen ama olmayan</td><td>Haven't you finished <strong>yet</strong>?</td></tr>
+                            <tr><td><strong>ever</strong></td><td>hiç (soru)</td><td>Hayat deneyimi</td><td>Have you <strong>ever</strong> been?</td></tr>
+                            <tr><td><strong>never</strong></td><td>hiç (olumsuz)</td><td>Hayatta hiç olmayan</td><td>I have <strong>never</strong> seen</td></tr>
+                            <tr><td><strong>for</strong></td><td>...boyunca</td><td>Süre belirtir</td><td>for 3 years, for 2 hours</td></tr>
+                            <tr><td><strong>since</strong></td><td>...beri</td><td>Başlangıç noktası</td><td>since 2020, since Monday</td></tr>
+                        </table>
+
+                        <p><strong>💡 FOR vs SINCE:</strong></p>
+                        <ul>
+                            <li><strong>FOR</strong> + süre: for 5 years, for 3 months, for 2 hours</li>
+                            <li><strong>SINCE</strong> + başlangıç noktası: since 2020, since January, since Monday</li>
+                        </ul>
+
+                        <h4>🆚 Past Simple vs Present Perfect</h4>
+                        <table class="vocab-table">
+                            <tr><th>Past Simple</th><th>Present Perfect</th></tr>
+                            <tr><td>Geçmişte bitti, şimdiyle ilgisi yok</td><td>Geçmiş, ama şimdiyle ilgili</td></tr>
+                            <tr><td>I worked there <strong>last year</strong></td><td>I have worked there <strong>for 5 years</strong></td></tr>
+                            <tr><td>Zaman belli: yesterday, last week</td><td>Zaman belirsiz veya devam eden</td></tr>
+                            <tr><td>She finished <strong>yesterday</strong></td><td>She has <strong>just</strong> finished</td></tr>
+                        </table>
+                    </div>
+
+                    <div class="explanation-box">
+                        <h3>💼 Meslek Kelimeleri (Jobs & Professions)</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Present Perfect Örnek</th></tr>
+                            <tr><td><strong>accountant</strong></td><td>muhasebeci</td><td>She has worked as an accountant for 5 years</td></tr>
+                            <tr><td><strong>engineer</strong></td><td>mühendis</td><td>I have been an engineer since 2018</td></tr>
+                            <tr><td><strong>manager</strong></td><td>müdür</td><td>He has just become a manager</td></tr>
                             <tr><td><strong>secretary</strong></td><td>sekreter</td><td>Have you ever worked as a secretary?</td></tr>
-                            <tr><td><strong>salesperson</strong></td><td>satış elemanı</td><td>She has never been a salesperson.</td></tr>
+                            <tr><td><strong>salesperson</strong></td><td>satış elemanı</td><td>She has never been a salesperson</td></tr>
                         </table>
-
-                        <h3>🏢 Im Büro (Office Vocabulary)</h3>
-                        <table class="vocab-table">
-                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
-                            <tr><td><strong>meeting</strong></td><td>toplantı</td><td>I have already attended three meetings today.</td></tr>
-                            <tr><td><strong>deadline</strong></td><td>son tarih</td><td>Have you met the deadline?</td></tr>
-                            <tr><td><strong>colleague</strong></td><td>meslektaş</td><td>I have worked with many colleagues.</td></tr>
-                            <tr><td><strong>project</strong></td><td>proje</td><td>We have completed the project.</td></tr>
-                            <tr><td><strong>salary</strong></td><td>maaş</td><td>My salary has increased.</td></tr>
-                        </table>
-
-                        <h3>✅ Present Perfect - Struktur</h3>
-                        <div class="explanation-box">
-                            <p><strong>Positiv:</strong> I/You/We/They <strong>have</strong> worked | He/She/It <strong>has</strong> worked</p>
-                            <p><strong>Negativ:</strong> I <strong>haven't</strong> (have not) worked | She <strong>hasn't</strong> (has not) worked</p>
-                            <p><strong>Frage:</strong> <strong>Have</strong> you worked? | <strong>Has</strong> she worked?</p>
-                            <br>
-                            <p><strong>Beispiele:</strong></p>
-                            <ul>
-                                <li>I <strong>have worked</strong> here for 3 years. (Immer noch hier)</li>
-                                <li>She <strong>has just finished</strong> the report. (Gerade eben fertig)</li>
-                                <li><strong>Have</strong> you <strong>ever been</strong> to London? (Erfahrung im Leben)</li>
-                                <li>He <strong>hasn't arrived</strong> yet. (Bis jetzt nicht)</li>
-                            </ul>
-                        </div>
                     </div>
                 `
             },
@@ -2601,58 +3071,102 @@ const learningData = {
             explanation: {
                 title: "Meinungen ausdrücken und argumentieren",
                 content: `
+                    <div class="grammar-focus">
+                        <h3>🎯 Bu Bölümde Öğreneceklerimiz</h3>
+                        <ul>
+                            <li><strong>Connectors (Bağlaçlar):</strong> because, although, however, therefore</li>
+                            <li><strong>Opinion Phrases (Görüş İfadeleri):</strong> I think, In my opinion, I believe</li>
+                            <li><strong>Agreement/Disagreement (Katılma/Katılmama):</strong> I agree, I disagree</li>
+                        </ul>
+                    </div>
+
                     <div class="explanation-box">
-                        <div class="grammar-focus">
-                            <h4>🎯 Grammatik-Fokus</h4>
-                            <ul>
-                                <li><strong>Connectors:</strong> because, although, however, therefore</li>
-                                <li><strong>Opinion phrases:</strong> I think, In my opinion, I believe</li>
-                                <li><strong>Agreement/Disagreement:</strong> I agree, I disagree, I see your point</li>
-                            </ul>
-                        </div>
-
-                        <h3>💭 Meinung ausdrücken</h3>
+                        <h3>📌 Basit Açıklama: Görüş Bildirme (Expressing Opinions)</h3>
+                        
+                        <h4>💭 Görüş İfadeleri</h4>
                         <table class="vocab-table">
-                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
-                            <tr><td><strong>I think (that)...</strong></td><td>Bence...</td><td>I think technology is important.</td></tr>
-                            <tr><td><strong>In my opinion...</strong></td><td>Bana göre...</td><td>In my opinion, education is key.</td></tr>
-                            <tr><td><strong>I believe (that)...</strong></td><td>İnanıyorum ki...</td><td>I believe we can solve this.</td></tr>
-                            <tr><td><strong>From my point of view...</strong></td><td>Benim açımdan...</td><td>From my point of view, it's fair.</td></tr>
-                            <tr><td><strong>I feel (that)...</strong></td><td>Hissediyorum ki...</td><td>I feel that we need change.</td></tr>
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Kullanım</th><th>Örnek</th></tr>
+                            <tr><td><strong>I think (that)...</strong></td><td>Bence...</td><td>En yaygın</td><td>I think technology is important</td></tr>
+                            <tr><td><strong>In my opinion...</strong></td><td>Bana göre...</td><td>Resmi</td><td>In my opinion, education is key</td></tr>
+                            <tr><td><strong>I believe (that)...</strong></td><td>İnanıyorum ki...</td><td>Güçlü görüş</td><td>I believe we can solve this</td></tr>
+                            <tr><td><strong>From my point of view...</strong></td><td>Benim açımdan...</td><td>Kişisel bakış</td><td>From my point of view, it's fair</td></tr>
+                            <tr><td><strong>I feel (that)...</strong></td><td>Hissediyorum ki...</td><td>Duygusal</td><td>I feel that we need change</td></tr>
                         </table>
 
-                        <h3>✅ Zustimmung (Agreement)</h3>
+                        <p><strong>💡 İpucu:</strong> "I think" ve "In my opinion" cümlenin başında veya ortasında kullanılabilir:</p>
+                        <ul>
+                            <li>I think <strong>technology is important</strong></li>
+                            <li><strong>Technology</strong>, I think, <strong>is important</strong></li>
+                        </ul>
+
+                        <h4>✅ Katılma (Agreement)</h4>
                         <table class="vocab-table">
-                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
-                            <tr><td><strong>I agree</strong></td><td>Katılıyorum</td><td>I agree with you completely.</td></tr>
-                            <tr><td><strong>Exactly!</strong></td><td>Kesinlikle!</td><td>Exactly! That's my point too.</td></tr>
-                            <tr><td><strong>You're right</strong></td><td>Haklısın</td><td>You're absolutely right.</td></tr>
-                            <tr><td><strong>I see your point</strong></td><td>Ne demek istediğini anlıyorum</td><td>I see your point, and I agree.</td></tr>
+                            <tr><th>İfade</th><th>Türkçe</th><th>Güç</th><th>Örnek</th></tr>
+                            <tr><td><strong>I agree</strong></td><td>Katılıyorum</td><td>Güçlü</td><td>I completely agree with you</td></tr>
+                            <tr><td><strong>Exactly!</strong></td><td>Kesinlikle!</td><td>Çok güçlü</td><td>Exactly! That's my point too</td></tr>
+                            <tr><td><strong>You're right</strong></td><td>Haklısın</td><td>Kabul</td><td>You're absolutely right</td></tr>
+                            <tr><td><strong>I see your point</strong></td><td>Ne demek istediğini anlıyorum</td><td>Anlayış</td><td>I see your point, and I agree</td></tr>
+                            <tr><td><strong>That's true</strong></td><td>Bu doğru</td><td>Onay</td><td>That's true, I hadn't thought of that</td></tr>
                         </table>
 
-                        <h3>❌ Ablehnung (Disagreement)</h3>
+                        <h4>❌ Katılmama (Disagreement)</h4>
                         <table class="vocab-table">
-                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
-                            <tr><td><strong>I disagree</strong></td><td>Katılmıyorum</td><td>I'm afraid I disagree.</td></tr>
-                            <tr><td><strong>I don't think so</strong></td><td>Öyle düşünmüyorum</td><td>I don't think so because...</td></tr>
-                            <tr><td><strong>I see your point, but...</strong></td><td>Anlıyorum ama...</td><td>I see your point, but I think differently.</td></tr>
-                            <tr><td><strong>On the contrary...</strong></td><td>Aksine...</td><td>On the contrary, it helps us.</td></tr>
+                            <tr><th>İfade</th><th>Türkçe</th><th>Kibarlık</th><th>Örnek</th></tr>
+                            <tr><td><strong>I disagree</strong></td><td>Katılmıyorum</td><td>Direkt</td><td>I'm afraid I disagree</td></tr>
+                            <tr><td><strong>I don't think so</strong></td><td>Öyle düşünmüyorum</td><td>Nazik</td><td>I don't think so because...</td></tr>
+                            <tr><td><strong>I see your point, but...</strong></td><td>Anlıyorum ama...</td><td>Çok nazik</td><td>I see your point, but I think differently</td></tr>
+                            <tr><td><strong>On the contrary...</strong></td><td>Aksine...</td><td>Karşı çıkma</td><td>On the contrary, it helps us</td></tr>
+                            <tr><td><strong>I'm not sure about that</strong></td><td>Bundan emin değilim</td><td>Yumuşak</td><td>I'm not sure about that idea</td></tr>
                         </table>
 
-                        <h3>🔗 Connectors - Verbindungswörter</h3>
-                        <div class="explanation-box">
-                            <p><strong>because</strong> (weil) - Grund:</p>
-                            <p>I agree <strong>because</strong> it's logical.</p>
-                            <br>
-                            <p><strong>although / though</strong> (obwohl) - Kontrast:</p>
-                            <p><strong>Although</strong> it's expensive, it's worth it.</p>
-                            <br>
-                            <p><strong>however</strong> (jedoch) - Kontrast:</p>
-                            <p>I like it. <strong>However</strong>, it's too expensive.</p>
-                            <br>
-                            <p><strong>therefore</strong> (deshalb) - Folge:</p>
-                            <p>It's important. <strong>Therefore</strong>, we should act.</p>
-                        </div>
+                        <h4>🔗 Bağlaçlar (Connectors)</h4>
+                        
+                        <p><strong>1. BECAUSE (çünkü) - SEBEP</strong></p>
+                        <p>Bir şeyin neden olduğunu açıklar:</p>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Sonuç + <strong>because</strong> + Sebep</td><td>I agree <strong>because</strong> it's logical</td><td>Katılıyorum çünkü mantıklı</td></tr>
+                            <tr><td></td><td>She's happy <strong>because</strong> she passed</td><td>Mutlu çünkü geçti</td></tr>
+                        </table>
+
+                        <p><strong>2. ALTHOUGH / THOUGH (rağmen) - KARŞITLIK</strong></p>
+                        <p>Beklenmeyen bir durum gösterir:</p>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td><strong>Although</strong> + karşıt durum + sonuç</td><td><strong>Although</strong> it's expensive, it's worth it</td><td>Pahalı olmasına rağmen, değer</td></tr>
+                            <tr><td></td><td><strong>Although</strong> I'm tired, I'll help you</td><td>Yorgun olmama rağmen, yardım edeceğim</td></tr>
+                        </table>
+
+                        <p><strong>3. HOWEVER (ancak, fakat) - KARŞITLIK</strong></p>
+                        <p>İki cümle arasında karşıtlık kurar (virgülle ayrılır):</p>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Cümle 1. <strong>However,</strong> Cümle 2</td><td>I like it. <strong>However,</strong> it's too expensive</td><td>Beğendim. Ancak çok pahalı</td></tr>
+                            <tr><td></td><td>He's nice. <strong>However,</strong> I don't trust him</td><td>Nazik. Ama güvenmiyorum</td></tr>
+                        </table>
+
+                        <p><strong>4. THEREFORE (bu yüzden, dolayısıyla) - SONUÇ</strong></p>
+                        <p>Mantıksal sonuç gösterir:</p>
+                        <table class="vocab-table">
+                            <tr><th>Yapı</th><th>Örnek</th><th>Türkçe</th></tr>
+                            <tr><td>Sebep. <strong>Therefore,</strong> Sonuç</td><td>It's important. <strong>Therefore,</strong> we should act</td><td>Önemli. Bu yüzden harekete geçmeliyiz</td></tr>
+                            <tr><td></td><td>She studied hard. <strong>Therefore,</strong> she passed</td><td>Çok çalıştı. Dolayısıyla geçti</td></tr>
+                        </table>
+
+                        <h4>📋 Bağlaç Karşılaştırma Tablosu</h4>
+                        <table class="vocab-table">
+                            <tr><th>Bağlaç</th><th>Anlamı</th><th>Kullanım</th><th>Örnek</th></tr>
+                            <tr><td><strong>because</strong></td><td>çünkü</td><td>Sebep</td><td>I agree <strong>because</strong> it makes sense</td></tr>
+                            <tr><td><strong>although</strong></td><td>rağmen</td><td>Karşıtlık</td><td><strong>Although</strong> it's hard, I'll try</td></tr>
+                            <tr><td><strong>however</strong></td><td>ancak</td><td>Karşıtlık (cümle arası)</td><td>It's good. <strong>However,</strong> it's expensive</td></tr>
+                            <tr><td><strong>therefore</strong></td><td>bu yüzden</td><td>Sonuç</td><td>It's late. <strong>Therefore,</strong> we must go</td></tr>
+                        </table>
+
+                        <p><strong>⚠️ ÖNEMLİ FARKLAR:</strong></p>
+                        <ul>
+                            <li><strong>because</strong> ile <strong>although</strong> cümle içinde kullanılır (virgül gerekmez)</li>
+                            <li><strong>however</strong> ve <strong>therefore</strong> cümleler arasında kullanılır (virgül gerekir)</li>
+                        </ul>
                     </div>
                 `
             },
