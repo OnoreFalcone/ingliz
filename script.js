@@ -18,11 +18,17 @@ const gameTab = document.getElementById('gameTab');
 const checkExerciseBtn = document.getElementById('checkExercise');
 const checkReadingBtn = document.getElementById('checkReading');
 
+// Mobile elements
+const mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
+const mobileAccordionContent = document.getElementById('mobileAccordionContent');
+const mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
+
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
     loadProgress();
     loadChapter(1);
     setupEventListeners();
+    setupMobileListeners();
     updateProgressBar();
 });
 
@@ -59,6 +65,52 @@ function setupEventListeners() {
 
     // Reading check button
     checkReadingBtn.addEventListener('click', checkReading);
+}
+
+// Mobile event listeners
+function setupMobileListeners() {
+    // Mobile accordion toggle
+    if (mobileAccordionTrigger) {
+        mobileAccordionTrigger.addEventListener('click', () => {
+            mobileAccordionTrigger.classList.toggle('active');
+            mobileAccordionContent.classList.toggle('active');
+        });
+    }
+
+    // Mobile chapter navigation
+    mobileChapterItems.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const chapterId = parseInt(btn.dataset.chapter);
+            loadChapter(chapterId);
+            
+            // Close accordion after selection
+            mobileAccordionTrigger.classList.remove('active');
+            mobileAccordionContent.classList.remove('active');
+            
+            // Update mobile chapter indicator
+            updateMobileChapterIndicator(chapterId);
+        });
+    });
+}
+
+// Update mobile chapter indicator
+function updateMobileChapterIndicator(chapterId) {
+    const currentChapterNumber = document.getElementById('currentChapterNumber');
+    const mobileChapterTitle = document.getElementById('mobileChapterTitle');
+    const chapter = learningData.chapters[chapterId];
+    
+    if (currentChapterNumber && mobileChapterTitle && chapter) {
+        currentChapterNumber.textContent = chapterId;
+        mobileChapterTitle.textContent = chapter.title;
+    }
+    
+    // Update active mobile chapter item
+    mobileChapterItems.forEach(btn => {
+        btn.classList.remove('active');
+        if (parseInt(btn.dataset.chapter) === chapterId) {
+            btn.classList.add('active');
+        }
+    });
 }
 
 // Load chapter content
@@ -720,9 +772,17 @@ function updateProgressBar() {
 
     const progressFill = document.getElementById('progressFill');
     const progressText = document.getElementById('progressText');
+    const mobileProgressFill = document.getElementById('mobileProgressFill');
+    const mobileProgressText = document.getElementById('mobileProgressText');
 
     progressFill.style.width = `${percentage}%`;
     progressText.textContent = `%${percentage} Tamamlandı`;
+    
+    // Update mobile progress bar
+    if (mobileProgressFill && mobileProgressText) {
+        mobileProgressFill.style.width = `${percentage}%`;
+        mobileProgressText.textContent = `%${percentage} Tamamlandı`;
+    }
 }
 
 // Show confetti animation
