@@ -6,26 +6,44 @@ let userProgress = {
     exerciseScores: {}
 };
 
-// DOM Elements
-const sidebar = document.getElementById('sidebar');
-const menuToggle = document.getElementById('menuToggle');
-const chapterButtons = document.querySelectorAll('.chapter-btn');
-const tabButtons = document.querySelectorAll('.tab-btn');
-const explanationTab = document.getElementById('explanationTab');
-const exerciseTab = document.getElementById('exerciseTab');
-const readingTab = document.getElementById('readingTab');
-const gameTab = document.getElementById('gameTab');
-const checkExerciseBtn = document.getElementById('checkExercise');
-const checkReadingBtn = document.getElementById('checkReading');
-const mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
-const mobileAccordionContent = document.getElementById('mobileAccordionContent');
-const mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
-const currentChapterIndicator = document.getElementById('currentChapterIndicator');
-const mobileProgressFill = document.getElementById('mobileProgressFill');
-const mobileProgressText = document.getElementById('mobileProgressText');
+// DOM Elements - will be initialized after DOM loads
+let sidebar;
+let menuToggle;
+let chapterButtons;
+let tabButtons;
+let explanationTab;
+let exerciseTab;
+let readingTab;
+let gameTab;
+let checkExerciseBtn;
+let checkReadingBtn;
+let mobileAccordionTrigger;
+let mobileAccordionContent;
+let mobileChapterItems;
+let currentChapterIndicator;
+let mobileProgressFill;
+let mobileProgressText;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize DOM elements after DOM is loaded
+    sidebar = document.getElementById('sidebar');
+    menuToggle = document.getElementById('menuToggle');
+    chapterButtons = document.querySelectorAll('.chapter-btn');
+    tabButtons = document.querySelectorAll('.tab-btn');
+    explanationTab = document.getElementById('explanationTab');
+    exerciseTab = document.getElementById('exerciseTab');
+    readingTab = document.getElementById('readingTab');
+    gameTab = document.getElementById('gameTab');
+    checkExerciseBtn = document.getElementById('checkExercise');
+    checkReadingBtn = document.getElementById('checkReading');
+    mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
+    mobileAccordionContent = document.getElementById('mobileAccordionContent');
+    mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
+    currentChapterIndicator = document.getElementById('currentChapterIndicator');
+    mobileProgressFill = document.getElementById('mobileProgressFill');
+    mobileProgressText = document.getElementById('mobileProgressText');
+    
     loadProgress();
     loadChapter(1);
     setupEventListeners();
