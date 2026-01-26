@@ -6,25 +6,31 @@ let userProgress = {
     exerciseScores: {}
 };
 
-// DOM Elements
-const sidebar = document.getElementById('sidebar');
-const menuToggle = document.getElementById('menuToggle');
-const chapterButtons = document.querySelectorAll('.chapter-btn');
-const tabButtons = document.querySelectorAll('.tab-btn');
-const explanationTab = document.getElementById('explanationTab');
-const exerciseTab = document.getElementById('exerciseTab');
-const readingTab = document.getElementById('readingTab');
-const gameTab = document.getElementById('gameTab');
-const checkExerciseBtn = document.getElementById('checkExercise');
-const checkReadingBtn = document.getElementById('checkReading');
-
-// Mobile elements
-const mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
-const mobileAccordionContent = document.getElementById('mobileAccordionContent');
-const mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
+// DOM Elements - will be initialized after DOM loads
+let sidebar, menuToggle, chapterButtons, tabButtons;
+let explanationTab, exerciseTab, readingTab, gameTab;
+let checkExerciseBtn, checkReadingBtn;
+let mobileAccordionTrigger, mobileAccordionContent, mobileChapterItems;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize DOM elements
+    sidebar = document.getElementById('sidebar');
+    menuToggle = document.getElementById('menuToggle');
+    chapterButtons = document.querySelectorAll('.chapter-btn');
+    tabButtons = document.querySelectorAll('.tab-btn');
+    explanationTab = document.getElementById('explanationTab');
+    exerciseTab = document.getElementById('exerciseTab');
+    readingTab = document.getElementById('readingTab');
+    gameTab = document.getElementById('gameTab');
+    checkExerciseBtn = document.getElementById('checkExercise');
+    checkReadingBtn = document.getElementById('checkReading');
+    
+    // Initialize mobile elements
+    mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
+    mobileAccordionContent = document.getElementById('mobileAccordionContent');
+    mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
+    
     loadProgress();
     loadChapter(1);
     setupEventListeners();
