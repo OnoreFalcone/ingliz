@@ -1961,6 +1961,901 @@ const learningData = {
                     }
                 ]
             }
+        },
+        
+        // ========================================
+        // B1 LEVEL CHAPTERS (7-15)
+        // ========================================
+        
+        7: {
+            title: "Gesundheit & Arztbesuch",
+            level: "B1",
+            grammar: ["past_simple_irregular", "modal_verbs_should_must"],
+            explanation: {
+                title: "Gesundheit und medizinische Versorgung",
+                content: `
+                    <div class="explanation-box">
+                        <div class="grammar-focus">
+                            <h4>🎯 Grammatik-Fokus</h4>
+                            <ul>
+                                <li><strong>Past Simple (irregular):</strong> I felt sick, I went to the doctor</li>
+                                <li><strong>Modal verbs:</strong> should, must, have to (Ratschläge & Pflichten)</li>
+                            </ul>
+                        </div>
+
+                        <h3>🏥 Körperteile (Body Parts)</h3>
+                        <table class="vocab-table">
+                            <tr>
+                                <th>İngilizce</th>
+                                <th>Türkçe</th>
+                                <th>Örnek</th>
+                            </tr>
+                            <tr><td><strong>head</strong></td><td>baş</td><td>My head hurts.</td></tr>
+                            <tr><td><strong>throat</strong></td><td>boğaz</td><td>I have a sore throat.</td></tr>
+                            <tr><td><strong>stomach</strong></td><td>mide</td><td>My stomach aches.</td></tr>
+                            <tr><td><strong>back</strong></td><td>sırt</td><td>I hurt my back.</td></tr>
+                            <tr><td><strong>arm</strong></td><td>kol</td><td>I broke my arm.</td></tr>
+                            <tr><td><strong>leg</strong></td><td>bacak</td><td>My leg is swollen.</td></tr>
+                            <tr><td><strong>chest</strong></td><td>göğüs</td><td>I have chest pain.</td></tr>
+                        </table>
+
+                        <h3>🤒 Symptome (Symptoms)</h3>
+                        <table class="vocab-table">
+                            <tr>
+                                <th>İngilizce</th>
+                                <th>Türkçe</th>
+                                <th>Örnek</th>
+                            </tr>
+                            <tr><td><strong>fever</strong></td><td>ateş</td><td>I have a high fever.</td></tr>
+                            <tr><td><strong>cough</strong></td><td>öksürük</td><td>I can't stop coughing.</td></tr>
+                            <tr><td><strong>cold</strong></td><td>soğuk algınlığı</td><td>I caught a cold.</td></tr>
+                            <tr><td><strong>flu</strong></td><td>grip</td><td>She has the flu.</td></tr>
+                            <tr><td><strong>headache</strong></td><td>baş ağrısı</td><td>I have a terrible headache.</td></tr>
+                            <tr><td><strong>dizzy</strong></td><td>başı dönen</td><td>I feel dizzy.</td></tr>
+                            <tr><td><strong>nauseous</strong></td><td>mide bulantısı</td><td>I feel nauseous.</td></tr>
+                        </table>
+
+                        <h3>💊 Beim Arzt (At the Doctor's)</h3>
+                        <table class="vocab-table">
+                            <tr>
+                                <th>İngilizce</th>
+                                <th>Türkçe</th>
+                                <th>Örnek</th>
+                            </tr>
+                            <tr><td><strong>appointment</strong></td><td>randevu</td><td>I'd like to make an appointment.</td></tr>
+                            <tr><td><strong>prescription</strong></td><td>reçete</td><td>The doctor gave me a prescription.</td></tr>
+                            <tr><td><strong>medicine</strong></td><td>ilaç</td><td>Take this medicine twice a day.</td></tr>
+                            <tr><td><strong>treatment</strong></td><td>tedavi</td><td>What treatment do you recommend?</td></tr>
+                            <tr><td><strong>pain</strong></td><td>ağrı</td><td>Where is the pain?</td></tr>
+                            <tr><td><strong>examination</strong></td><td>muayene</td><td>I need an examination.</td></tr>
+                        </table>
+
+                        <h3>⚕️ Past Simple - Unregelmäßige Verben</h3>
+                        <table class="vocab-table">
+                            <tr>
+                                <th>Base Form</th>
+                                <th>Past Simple</th>
+                                <th>Türkçe</th>
+                                <th>Örnek</th>
+                            </tr>
+                            <tr><td>feel</td><td><strong>felt</strong></td><td>hissetmek</td><td>I <strong>felt</strong> sick yesterday.</td></tr>
+                            <tr><td>go</td><td><strong>went</strong></td><td>gitmek</td><td>I <strong>went</strong> to the doctor.</td></tr>
+                            <tr><td>have</td><td><strong>had</strong></td><td>sahip olmak</td><td>I <strong>had</strong> a fever.</td></tr>
+                            <tr><td>take</td><td><strong>took</strong></td><td>almak</td><td>I <strong>took</strong> medicine.</td></tr>
+                            <tr><td>break</td><td><strong>broke</strong></td><td>kırmak</td><td>He <strong>broke</strong> his arm.</td></tr>
+                            <tr><td>hurt</td><td><strong>hurt</strong></td><td>acımak/zarar vermek</td><td>My back <strong>hurt</strong>.</td></tr>
+                        </table>
+
+                        <h3>💬 Modal Verbs: Should & Must</h3>
+                        <div class="explanation-box">
+                            <p><strong>Should</strong> = Tavsiye (solltest/sollten)</p>
+                            <ul>
+                                <li>You <strong>should</strong> rest. (Dinlenmelisin.)</li>
+                                <li>You <strong>should</strong> drink more water. (Daha fazla su içmelisin.)</li>
+                                <li>You <strong>shouldn't</strong> smoke. (Sigara içmemelisin.)</li>
+                            </ul>
+                            <br>
+                            <p><strong>Must / Have to</strong> = Zorunluluk (muss/müssen)</p>
+                            <ul>
+                                <li>You <strong>must</strong> take this medicine. (Bu ilacı almalısın - zorundasın.)</li>
+                                <li>I <strong>have to</strong> go to the hospital. (Hastaneye gitmeliyim - zorundayım.)</li>
+                                <li>You <strong>mustn't</strong> drive. (Araba kullanmamalısın - yasak.)</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            exercise: {
+                type: "fill-in-the-blank",
+                instructions: "Lücken mit der richtigen Verbform ausfüllen (Past Simple)",
+                questions: [
+                    {
+                        question: "Last week, I ___ (feel) terrible, so I ___ (go) to see the doctor.",
+                        answer: "felt, went",
+                        options: ["felt, went", "feel, go", "feeled, goed", "felt, go"],
+                        correct: 0,
+                        explanation: "Unregelmäßige Verben: feel → felt, go → went"
+                    },
+                    {
+                        question: "The doctor said I ___ rest and ___ drink plenty of water.",
+                        answer: "should, should",
+                        options: ["should, should", "must, must", "can, can", "will, will"],
+                        correct: 0,
+                        explanation: "'Should' für Ratschläge/Empfehlungen"
+                    },
+                    {
+                        question: "She ___ (break) her leg and ___ (have) to stay in hospital.",
+                        answer: "broke, had",
+                        options: ["broke, had", "broken, have", "breaked, had", "broke, has"],
+                        correct: 0,
+                        explanation: "break → broke, have → had (Past Simple)"
+                    },
+                    {
+                        question: "You ___ take this medicine three times a day.",
+                        answer: "must",
+                        options: ["must", "can", "may", "could"],
+                        correct: 0,
+                        explanation: "'Must' für starke Empfehlungen/Pflicht"
+                    },
+                    {
+                        question: "I ___ (hurt) my back while lifting heavy boxes.",
+                        answer: "hurt",
+                        options: ["hurt", "hurted", "hurting", "hurts"],
+                        correct: 0,
+                        explanation: "hurt → hurt (gleiche Form in Base und Past)"
+                    }
+                ]
+            },
+            reading: {
+                title: "At the Doctor's Office",
+                text: `
+                    <div class="reading-text">
+                        <p><strong>Sarah's Doctor Visit</strong></p>
+                        <p>Last Monday, Sarah woke up feeling terrible. She had a high fever, a bad cough, and her throat was very sore. She decided to call the doctor's office and make an appointment.</p>
+                        
+                        <p>The receptionist answered: "Good morning, Dr. Smith's office. How can I help you?"</p>
+                        
+                        <p>Sarah explained her symptoms. The receptionist said: "We have an appointment available this afternoon at 3 PM. Does that work for you?"</p>
+                        
+                        <p>Sarah went to the doctor's office at 3 PM. Dr. Smith examined her and said: "You have the flu. You should rest for a few days. You must drink lots of water and take this medicine twice a day. You shouldn't go to work this week."</p>
+                        
+                        <p>Sarah thanked the doctor, got her prescription, and went to the pharmacy. She bought the medicine and went home to rest. After three days, she felt much better.</p>
+                    </div>
+                `,
+                questions: [
+                    {
+                        question: "What symptoms did Sarah have?",
+                        options: [
+                            "High fever, cough, and sore throat",
+                            "Broken leg and headache",
+                            "Stomach ache and dizziness",
+                            "Back pain and fever"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'She had a high fever, a bad cough, and her throat was very sore.'"
+                    },
+                    {
+                        question: "When was Sarah's appointment?",
+                        options: [
+                            "Monday afternoon at 3 PM",
+                            "Tuesday morning at 10 AM",
+                            "Monday morning at 9 AM",
+                            "Wednesday at 2 PM"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'We have an appointment available this afternoon at 3 PM.'"
+                    },
+                    {
+                        question: "What did the doctor diagnose?",
+                        options: [
+                            "The flu",
+                            "A cold",
+                            "A broken bone",
+                            "Food poisoning"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'You have the flu.'"
+                    },
+                    {
+                        question: "What did the doctor tell Sarah to do?",
+                        options: [
+                            "Rest, drink water, take medicine twice daily",
+                            "Exercise more and eat vegetables",
+                            "Go to the hospital immediately",
+                            "Come back tomorrow"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'You should rest... must drink lots of water... take this medicine twice a day.'"
+                    },
+                    {
+                        question: "How long did it take Sarah to feel better?",
+                        options: [
+                            "Three days",
+                            "One week",
+                            "Two days",
+                            "One month"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'After three days, she felt much better.'"
+                    }
+                ]
+            },
+            game: {
+                type: "conversation_simulator",
+                title: "🏥 Beim Arzt - Konversations-Simulator",
+                difficulty: "medium",
+                avatar: "👨‍⚕️",
+                nodes: {
+                    start: {
+                        npcText: "Good morning! I'm Dr. Schmidt. How can I help you today?",
+                        choices: [
+                            {
+                                text: "I've been feeling sick since yesterday.",
+                                correct: true,
+                                feedback: "Perfekt! Klare Beschreibung des Problems.",
+                                next: "symptoms",
+                                npcResponse: "I see. Can you tell me more about your symptoms?"
+                            },
+                            {
+                                text: "Hello! Nice weather today!",
+                                correct: false,
+                                feedback: "Zu informell. Beim Arzt sollte man direkt das Problem beschreiben.",
+                                next: "symptoms",
+                                npcResponse: "Well... Let's focus on your health. What symptoms do you have?"
+                            },
+                            {
+                                text: "I need medicine immediately!",
+                                correct: false,
+                                feedback: "Zu direkt. Erst Symptome beschreiben, dann bekommt man Behandlung.",
+                                next: "symptoms",
+                                npcResponse: "First, I need to know what's wrong. What are your symptoms?"
+                            }
+                        ]
+                    },
+                    symptoms: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "I have a high fever, a bad cough, and my throat hurts.",
+                                correct: true,
+                                feedback: "Ausgezeichnet! Detaillierte und klare Symptom-Beschreibung.",
+                                next: "duration",
+                                npcResponse: "I understand. When did these symptoms start?"
+                            },
+                            {
+                                text: "Everything hurts everywhere!",
+                                correct: false,
+                                feedback: "Zu vage. Sei spezifisch bei Symptomen.",
+                                next: "duration",
+                                npcResponse: "Try to be more specific. When exactly did you start feeling unwell?"
+                            },
+                            {
+                                text: "I'm dying!",
+                                correct: false,
+                                feedback: "Übertrieben. Bleib sachlich und beschreibe konkrete Symptome.",
+                                next: "duration",
+                                npcResponse: "Let's stay calm. When did you first notice these problems?"
+                            }
+                        ]
+                    },
+                    duration: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "It started two days ago and has been getting worse.",
+                                correct: true,
+                                feedback: "Perfekt! Zeitangabe und Verlaufsbeschreibung.",
+                                next: "examination",
+                                npcResponse: "Alright. Let me examine you. Please sit on the examination table."
+                            },
+                            {
+                                text: "I don't remember exactly.",
+                                correct: false,
+                                feedback: "Versuche dich zu erinnern - Zeitangaben sind wichtig für die Diagnose.",
+                                next: "examination",
+                                npcResponse: "That's okay. Let me examine you now."
+                            },
+                            {
+                                text: "Long time ago... maybe.",
+                                correct: false,
+                                feedback: "Zu ungenau. Versuche eine ungefähre Zeitangabe zu machen.",
+                                next: "examination",
+                                npcResponse: "Let's proceed with the examination."
+                            }
+                        ]
+                    },
+                    examination: {
+                        npcText: "After examination... You have the flu. You should rest for a few days and take medicine. Do you have any questions?",
+                        choices: [
+                            {
+                                text: "How often should I take the medicine?",
+                                correct: true,
+                                feedback: "Sehr gute Frage! Wichtig für die richtige Behandlung.",
+                                next: "prescription",
+                                npcResponse: "Take it twice a day, morning and evening. Always take it with food."
+                            },
+                            {
+                                text: "Can I go to work tomorrow?",
+                                correct: true,
+                                feedback: "Gute praktische Frage!",
+                                next: "prescription",
+                                npcResponse: "No, you shouldn't go to work for at least 3 days. You need to rest."
+                            },
+                            {
+                                text: "Okay, bye!",
+                                correct: false,
+                                feedback: "Zu schnell! Stelle Fragen zur Behandlung.",
+                                next: "prescription",
+                                npcResponse: "Wait! Here's your prescription. Take it to the pharmacy."
+                            }
+                        ]
+                    },
+                    prescription: {
+                        npcText: "Here's your prescription. Remember: Rest, drink lots of water, and come back if you don't feel better in 5 days.",
+                        choices: [
+                            {
+                                text: "Thank you, doctor. I will follow your advice.",
+                                correct: true,
+                                feedback: "Perfekt! Höflich und zeigt, dass du die Anweisungen verstanden hast.",
+                                next: "end",
+                                npcResponse: "You're welcome! Take care and get well soon!"
+                            },
+                            {
+                                text: "Thanks. See you.",
+                                correct: true,
+                                feedback: "Okay, aber etwas zu kurz. Ein bisschen mehr Höflichkeit wäre besser.",
+                                next: "end",
+                                npcResponse: "Goodbye. Take care!"
+                            },
+                            {
+                                text: "Whatever.",
+                                correct: false,
+                                feedback: "Unhöflich! Zeige Dankbarkeit für die Behandlung.",
+                                next: "end",
+                                npcResponse: "...Please take care of yourself."
+                            }
+                        ]
+                    },
+                    end: {
+                        type: "end",
+                        npcText: "Consultation complete!"
+                    }
+                }
+            }
+        },
+        
+        8: {
+            title: "Arbeitswelt & Karriere",
+            level: "B1",
+            grammar: ["present_perfect"],
+            explanation: {
+                title: "Beruf und Arbeitsleben",
+                content: `
+                    <div class="explanation-box">
+                        <div class="grammar-focus">
+                            <h4>🎯 Grammatik-Fokus</h4>
+                            <ul>
+                                <li><strong>Present Perfect:</strong> have/has + past participle</li>
+                                <li><strong>Verwendung:</strong> Erfahrungen, Lebenslauf, abgeschlossene Handlungen mit Bezug zur Gegenwart</li>
+                                <li><strong>Signalwörter:</strong> already, yet, just, ever, never, for, since</li>
+                            </ul>
+                        </div>
+
+                        <h3>💼 Berufe (Jobs & Professions)</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td><strong>accountant</strong></td><td>muhasebeci</td><td>She has worked as an accountant for 5 years.</td></tr>
+                            <tr><td><strong>engineer</strong></td><td>mühendis</td><td>I have been an engineer since 2018.</td></tr>
+                            <tr><td><strong>manager</strong></td><td>müdür</td><td>He has just become a manager.</td></tr>
+                            <tr><td><strong>secretary</strong></td><td>sekreter</td><td>Have you ever worked as a secretary?</td></tr>
+                            <tr><td><strong>salesperson</strong></td><td>satış elemanı</td><td>She has never been a salesperson.</td></tr>
+                        </table>
+
+                        <h3>🏢 Im Büro (Office Vocabulary)</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td><strong>meeting</strong></td><td>toplantı</td><td>I have already attended three meetings today.</td></tr>
+                            <tr><td><strong>deadline</strong></td><td>son tarih</td><td>Have you met the deadline?</td></tr>
+                            <tr><td><strong>colleague</strong></td><td>meslektaş</td><td>I have worked with many colleagues.</td></tr>
+                            <tr><td><strong>project</strong></td><td>proje</td><td>We have completed the project.</td></tr>
+                            <tr><td><strong>salary</strong></td><td>maaş</td><td>My salary has increased.</td></tr>
+                        </table>
+
+                        <h3>✅ Present Perfect - Struktur</h3>
+                        <div class="explanation-box">
+                            <p><strong>Positiv:</strong> I/You/We/They <strong>have</strong> worked | He/She/It <strong>has</strong> worked</p>
+                            <p><strong>Negativ:</strong> I <strong>haven't</strong> (have not) worked | She <strong>hasn't</strong> (has not) worked</p>
+                            <p><strong>Frage:</strong> <strong>Have</strong> you worked? | <strong>Has</strong> she worked?</p>
+                            <br>
+                            <p><strong>Beispiele:</strong></p>
+                            <ul>
+                                <li>I <strong>have worked</strong> here for 3 years. (Immer noch hier)</li>
+                                <li>She <strong>has just finished</strong> the report. (Gerade eben fertig)</li>
+                                <li><strong>Have</strong> you <strong>ever been</strong> to London? (Erfahrung im Leben)</li>
+                                <li>He <strong>hasn't arrived</strong> yet. (Bis jetzt nicht)</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            exercise: {
+                type: "multiple-choice",
+                instructions: "Wähle die richtige Form (Present Perfect)",
+                questions: [
+                    {
+                        question: "I ___ in this company for five years.",
+                        answer: "have worked",
+                        options: ["have worked", "worked", "am working", "work"],
+                        correct: 0,
+                        explanation: "Present Perfect mit 'for' für Zeitdauer"
+                    },
+                    {
+                        question: "She ___ the email yet.",
+                        answer: "hasn't sent",
+                        options: ["hasn't sent", "didn't send", "doesn't send", "isn't sending"],
+                        correct: 0,
+                        explanation: "'yet' = noch nicht → Present Perfect Negativ"
+                    },
+                    {
+                        question: "___ you ever ___ in a team of more than 10 people?",
+                        answer: "Have, worked",
+                        options: ["Have, worked", "Did, work", "Do, work", "Are, working"],
+                        correct: 0,
+                        explanation: "'ever' = jemals → Present Perfect für Erfahrungen"
+                    },
+                    {
+                        question: "He ___ just ___ promoted to manager.",
+                        answer: "has, been",
+                        options: ["has, been", "was, been", "is, been", "had, been"],
+                        correct: 0,
+                        explanation: "'just' = gerade eben → Present Perfect"
+                    },
+                    {
+                        question: "We ___ the project already.",
+                        answer: "have finished",
+                        options: ["have finished", "finished", "are finishing", "finish"],
+                        correct: 0,
+                        explanation: "'already' = schon → Present Perfect"
+                    }
+                ]
+            },
+            reading: {
+                title: "My Career Journey",
+                text: `
+                    <div class="reading-text">
+                        <p><strong>My Career Journey - by Michael</strong></p>
+                        <p>I have worked in marketing for over 10 years now. After university, I started as a junior marketing assistant in a small company. I have learned so much since then!</p>
+                        
+                        <p>Three years ago, I got promoted to Marketing Manager. Since my promotion, I have led many successful campaigns and have worked with amazing teams. I have already managed five major projects this year.</p>
+                        
+                        <p>Last month, I applied for a new position at an international company. I have just received an email - they want to interview me next week! I have never worked for an international company before, so I'm very excited.</p>
+                        
+                        <p>I have prepared my CV and practiced my interview skills. I haven't told my current employer yet because I want to wait until I get the job offer. Wish me luck!</p>
+                    </div>
+                `,
+                questions: [
+                    {
+                        question: "How long has Michael worked in marketing?",
+                        options: ["Over 10 years", "5 years", "3 years", "1 year"],
+                        correct: 0,
+                        explanation: "Text: 'I have worked in marketing for over 10 years now.'"
+                    },
+                    {
+                        question: "When did Michael become Marketing Manager?",
+                        options: ["Three years ago", "Last month", "This year", "10 years ago"],
+                        correct: 0,
+                        explanation: "Text: 'Three years ago, I got promoted to Marketing Manager.'"
+                    },
+                    {
+                        question: "What happened last month?",
+                        options: [
+                            "He applied for a new job",
+                            "He got promoted",
+                            "He finished university",
+                            "He got the new job"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'Last month, I applied for a new position...'"
+                    },
+                    {
+                        question: "Has Michael worked for an international company before?",
+                        options: ["No, never", "Yes, once", "Yes, many times", "The text doesn't say"],
+                        correct: 0,
+                        explanation: "Text: 'I have never worked for an international company before'"
+                    },
+                    {
+                        question: "Has Michael told his current employer about the interview?",
+                        options: [
+                            "No, not yet",
+                            "Yes, he has",
+                            "Yes, last week",
+                            "He will tomorrow"
+                        ],
+                        correct: 0,
+                        explanation: "Text: 'I haven't told my current employer yet'"
+                    }
+                ]
+            },
+            game: {
+                type: "conversation_simulator",
+                title: "💼 Job Interview - Vorstellungsgespräch",
+                difficulty: "medium",
+                avatar: "👔",
+                nodes: {
+                    start: {
+                        npcText: "Good morning! Thank you for coming. Please, have a seat. Can you tell me about yourself?",
+                        choices: [
+                            {
+                                text: "I have worked in marketing for 5 years and I'm passionate about digital campaigns.",
+                                correct: true,
+                                feedback: "Perfekt! Professionell und relevant.",
+                                next: "experience",
+                                npcResponse: "That's impressive! Can you tell me about a successful project you've managed?"
+                            },
+                            {
+                                text: "I'm 30 years old and I like pizza.",
+                                correct: false,
+                                feedback: "Zu persönlich und irrelevant. Fokus auf berufliche Qualifikationen.",
+                                next: "experience",
+                                npcResponse: "Um... Let's talk about your professional experience instead."
+                            },
+                            {
+                                text: "I need this job because I need money.",
+                                correct: false,
+                                feedback: "Zu direkt! Betone deine Fähigkeiten und Motivation.",
+                                next: "experience",
+                                npcResponse: "I see... Tell me about your professional skills."
+                            }
+                        ]
+                    },
+                    experience: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "I have successfully launched three major campaigns that increased sales by 40%.",
+                                correct: true,
+                                feedback: "Ausgezeichnet! Konkrete Erfolge mit Zahlen.",
+                                next: "strengths",
+                                npcResponse: "Very impressive! What would you say are your main strengths?"
+                            },
+                            {
+                                text: "I've done many things. Everything went okay.",
+                                correct: false,
+                                feedback: "Zu vage! Sei spezifisch mit Beispielen und Erfolgen.",
+                                next: "strengths",
+                                npcResponse: "Can you be more specific? What are your strengths?"
+                            },
+                            {
+                                text: "I'm the best. Nobody can do it better than me.",
+                                correct: false,
+                                feedback: "Zu arrogant! Zeige Selbstvertrauen, aber bleibe bescheiden.",
+                                next: "strengths",
+                                npcResponse: "Confidence is good, but... what specific strengths do you have?"
+                            }
+                        ]
+                    },
+                    strengths: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "I'm a creative problem-solver and I work well in teams.",
+                                correct: true,
+                                feedback: "Sehr gut! Relevante berufliche Stärken.",
+                                next: "questions",
+                                npcResponse: "Great! Do you have any questions for us?"
+                            },
+                            {
+                                text: "I'm always on time.",
+                                correct: false,
+                                feedback: "Das ist Grundvoraussetzung, keine besondere Stärke. Nenne spezifische Fähigkeiten.",
+                                next: "questions",
+                                npcResponse: "That's... expected. Do you have questions about the position?"
+                            },
+                            {
+                                text: "I don't have any weaknesses.",
+                                correct: false,
+                                feedback: "Unrealistisch! Jeder hat Schwächen. Zeige Selbstreflexion.",
+                                next: "questions",
+                                npcResponse: "I see... Do you have any questions for me?"
+                            }
+                        ]
+                    },
+                    questions: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "Yes, what are the opportunities for professional development?",
+                                correct: true,
+                                feedback: "Perfekt! Zeigt Interesse an Weiterentwicklung.",
+                                next: "end",
+                                npcResponse: "We offer many training programs. We'll be in touch soon. Thank you!"
+                            },
+                            {
+                                text: "How many holidays do I get?",
+                                correct: false,
+                                feedback: "Zu direkt in der ersten Runde. Erst Interesse am Job zeigen.",
+                                next: "end",
+                                npcResponse: "We'll discuss that if we make an offer. Thank you for coming."
+                            },
+                            {
+                                text: "No, I'm fine.",
+                                correct: false,
+                                feedback: "Verpasste Chance! Stelle immer Fragen - zeigt Interesse.",
+                                next: "end",
+                                npcResponse: "Alright. We'll contact you soon. Goodbye."
+                            }
+                        ]
+                    },
+                    end: {
+                        type: "end",
+                        npcText: "Interview complete!"
+                    }
+                }
+            }
+        },
+
+        9: {
+            title: "Meinungen & Diskussionen",
+            level: "B1",
+            grammar: ["connectors", "opinion_phrases"],
+            explanation: {
+                title: "Meinungen ausdrücken und argumentieren",
+                content: `
+                    <div class="explanation-box">
+                        <div class="grammar-focus">
+                            <h4>🎯 Grammatik-Fokus</h4>
+                            <ul>
+                                <li><strong>Connectors:</strong> because, although, however, therefore</li>
+                                <li><strong>Opinion phrases:</strong> I think, In my opinion, I believe</li>
+                                <li><strong>Agreement/Disagreement:</strong> I agree, I disagree, I see your point</li>
+                            </ul>
+                        </div>
+
+                        <h3>💭 Meinung ausdrücken</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td><strong>I think (that)...</strong></td><td>Bence...</td><td>I think technology is important.</td></tr>
+                            <tr><td><strong>In my opinion...</strong></td><td>Bana göre...</td><td>In my opinion, education is key.</td></tr>
+                            <tr><td><strong>I believe (that)...</strong></td><td>İnanıyorum ki...</td><td>I believe we can solve this.</td></tr>
+                            <tr><td><strong>From my point of view...</strong></td><td>Benim açımdan...</td><td>From my point of view, it's fair.</td></tr>
+                            <tr><td><strong>I feel (that)...</strong></td><td>Hissediyorum ki...</td><td>I feel that we need change.</td></tr>
+                        </table>
+
+                        <h3>✅ Zustimmung (Agreement)</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td><strong>I agree</strong></td><td>Katılıyorum</td><td>I agree with you completely.</td></tr>
+                            <tr><td><strong>Exactly!</strong></td><td>Kesinlikle!</td><td>Exactly! That's my point too.</td></tr>
+                            <tr><td><strong>You're right</strong></td><td>Haklısın</td><td>You're absolutely right.</td></tr>
+                            <tr><td><strong>I see your point</strong></td><td>Ne demek istediğini anlıyorum</td><td>I see your point, and I agree.</td></tr>
+                        </table>
+
+                        <h3>❌ Ablehnung (Disagreement)</h3>
+                        <table class="vocab-table">
+                            <tr><th>İngilizce</th><th>Türkçe</th><th>Örnek</th></tr>
+                            <tr><td><strong>I disagree</strong></td><td>Katılmıyorum</td><td>I'm afraid I disagree.</td></tr>
+                            <tr><td><strong>I don't think so</strong></td><td>Öyle düşünmüyorum</td><td>I don't think so because...</td></tr>
+                            <tr><td><strong>I see your point, but...</strong></td><td>Anlıyorum ama...</td><td>I see your point, but I think differently.</td></tr>
+                            <tr><td><strong>On the contrary...</strong></td><td>Aksine...</td><td>On the contrary, it helps us.</td></tr>
+                        </table>
+
+                        <h3>🔗 Connectors - Verbindungswörter</h3>
+                        <div class="explanation-box">
+                            <p><strong>because</strong> (weil) - Grund:</p>
+                            <p>I agree <strong>because</strong> it's logical.</p>
+                            <br>
+                            <p><strong>although / though</strong> (obwohl) - Kontrast:</p>
+                            <p><strong>Although</strong> it's expensive, it's worth it.</p>
+                            <br>
+                            <p><strong>however</strong> (jedoch) - Kontrast:</p>
+                            <p>I like it. <strong>However</strong>, it's too expensive.</p>
+                            <br>
+                            <p><strong>therefore</strong> (deshalb) - Folge:</p>
+                            <p>It's important. <strong>Therefore</strong>, we should act.</p>
+                        </div>
+                    </div>
+                `
+            },
+            exercise: {
+                type: "sentence_constructor",
+                title: "🔧 Satz-Konstruktor: Meinungen & Argumente",
+                difficulty: "medium",
+                sentences: [
+                    {
+                        instruction: "Bilde einen Satz mit 'I think'",
+                        words: ["I", "think", "technology", "is", "very", "important"],
+                        correct: "I think technology is very important",
+                        explanation: "Meinungen: I think + Subjekt + Verb"
+                    },
+                    {
+                        instruction: "Verwende 'because' für den Grund",
+                        words: ["I", "agree", "because", "it", "makes", "sense"],
+                        correct: "I agree because it makes sense",
+                        explanation: "'because' verbindet Meinung mit Begründung"
+                    },
+                    {
+                        instruction: "Drücke einen Kontrast mit 'although' aus",
+                        words: ["Although", "it's", "difficult", "we", "can", "do", "it"],
+                        correct: "Although it's difficult we can do it",
+                        explanation: "'Although' am Satzanfang für Kontrast"
+                    },
+                    {
+                        instruction: "Nutze 'however' für Gegensatz",
+                        words: ["I", "understand", "However", "I", "disagree"],
+                        correct: "I understand However I disagree",
+                        explanation: "'However' trennt zwei gegensätzliche Aussagen"
+                    },
+                    {
+                        instruction: "Verwende 'In my opinion'",
+                        words: ["In", "my", "opinion", "education", "is", "the", "key"],
+                        correct: "In my opinion education is the key",
+                        explanation: "'In my opinion' am Anfang für persönliche Meinung"
+                    }
+                ]
+            },
+            reading: {
+                title: "Should Students Use Smartphones in School?",
+                text: `
+                    <div class="reading-text">
+                        <p><strong>A Debate: Smartphones in Schools</strong></p>
+                        
+                        <p><strong>Maria:</strong> I think students should be allowed to use smartphones in school. In my opinion, smartphones are useful learning tools. Students can use them for research and educational apps. Although some people think they're distracting, I believe the benefits outweigh the negatives.</p>
+                        
+                        <p><strong>John:</strong> I disagree with Maria. I don't think smartphones should be allowed in school because they distract students from learning. However, I see her point about educational benefits. Therefore, I suggest students should only use them in specific lessons with teacher supervision.</p>
+                        
+                        <p><strong>Emma:</strong> I see both points, but I think John's idea is the best. Although smartphones can be educational, students often use them for games and social media. From my point of view, we need clear rules about when and how to use them.</p>
+                    </div>
+                `,
+                questions: [
+                    {
+                        question: "What is Maria's opinion?",
+                        options: [
+                            "Students should use smartphones",
+                            "Smartphones should be banned",
+                            "No clear opinion",
+                            "Only teachers should use them"
+                        ],
+                        correct: 0,
+                        explanation: "Maria: 'I think students should be allowed to use smartphones in school.'"
+                    },
+                    {
+                        question: "Why does Maria think smartphones are good?",
+                        options: [
+                            "They're useful for research and learning apps",
+                            "They're fun",
+                            "Everyone has one",
+                            "Teachers like them"
+                        ],
+                        correct: 0,
+                        explanation: "Maria: 'smartphones are useful learning tools... for research and educational apps'"
+                    },
+                    {
+                        question: "What is John's main concern?",
+                        options: [
+                            "Smartphones distract students",
+                            "They're too expensive",
+                            "They break easily",
+                            "Parents don't like them"
+                        ],
+                        correct: 0,
+                        explanation: "John: 'they distract students from learning'"
+                    },
+                    {
+                        question: "What solution does John suggest?",
+                        options: [
+                            "Use them only in specific lessons with supervision",
+                            "Ban them completely",
+                            "Let students decide",
+                            "Use them all the time"
+                        ],
+                        correct: 0,
+                        explanation: "John: 'students should only use them in specific lessons with teacher supervision'"
+                    },
+                    {
+                        question: "What does Emma think about the debate?",
+                        options: [
+                            "John's compromise is the best idea",
+                            "Maria is completely right",
+                            "Both are wrong",
+                            "We need more smartphones"
+                        ],
+                        correct: 0,
+                        explanation: "Emma: 'I think John's idea is the best'"
+                    }
+                ]
+            },
+            game: {
+                type: "conversation_simulator",
+                title: "💭 Diskussion: Sollten wir mehr Homeoffice haben?",
+                difficulty: "hard",
+                avatar: "🤔",
+                nodes: {
+                    start: {
+                        npcText: "I believe companies should offer more home office options. What do you think?",
+                        choices: [
+                            {
+                                text: "I agree because it saves commuting time and increases productivity.",
+                                correct: true,
+                                feedback: "Perfekt! Klare Meinung mit Begründung.",
+                                next: "counterargument",
+                                npcResponse: "That's a good point. However, some people say it reduces team collaboration. What would you say to that?"
+                            },
+                            {
+                                text: "Whatever you say.",
+                                correct: false,
+                                feedback: "Keine Meinung! Drücke deine eigene Meinung aus.",
+                                next: "counterargument",
+                                npcResponse: "But what's YOUR opinion? Consider this: home office might reduce teamwork."
+                            },
+                            {
+                                text: "You're wrong!",
+                                correct: false,
+                                feedback: "Zu unhöflich! Respektiere andere Meinungen.",
+                                next: "counterargument",
+                                npcResponse: "Let's have a respectful discussion. What about the issue of team collaboration?"
+                            }
+                        ]
+                    },
+                    counterargument: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "I see your point. However, we can use video calls and online tools to stay connected.",
+                                correct: true,
+                                feedback: "Ausgezeichnet! Kontrast mit Lösung.",
+                                next: "compromise",
+                                npcResponse: "True! Maybe a hybrid model would work? Part home, part office?"
+                            },
+                            {
+                                text: "That's not important.",
+                                correct: false,
+                                feedback: "Ignoriert das Argument! Gehe darauf ein.",
+                                next: "compromise",
+                                npcResponse: "But it IS important to many. What about a mixed approach?"
+                            },
+                            {
+                                text: "I don't care about teamwork.",
+                                correct: false,
+                                feedback: "Zu negativ! Zeige, dass du verschiedene Perspektiven verstehst.",
+                                next: "compromise",
+                                npcResponse: "Teamwork matters. Perhaps a hybrid system could help?"
+                            }
+                        ]
+                    },
+                    compromise: {
+                        npcText: null,
+                        choices: [
+                            {
+                                text: "Exactly! I think 2-3 days home, 2-3 days office is ideal because it balances both needs.",
+                                correct: true,
+                                feedback: "Perfekt! Kompromiss mit Begründung.",
+                                next: "end",
+                                npcResponse: "I completely agree! That's a balanced solution."
+                            },
+                            {
+                                text: "No, it must be 100% home office!",
+                                correct: false,
+                                feedback: "Zu starr! In Diskussionen Kompromisse finden.",
+                                next: "end",
+                                npcResponse: "Well, we have different views. Let's agree to disagree."
+                            },
+                            {
+                                text: "Maybe.",
+                                correct: false,
+                                feedback: "Zu vage! Drücke eine klare Meinung aus.",
+                                next: "end",
+                                npcResponse: "Alright... It was nice talking to you."
+                            }
+                        ]
+                    },
+                    end: {
+                        type: "end",
+                        npcText: "Discussion complete!"
+                    }
+                }
+            }
         }
     }
 };
+
+
