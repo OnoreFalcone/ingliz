@@ -3372,4 +3372,6 @@ var learningData = {
     }
 };
 
-
+// Explizit global verfügbar machen
+window.learningData = learningData;
+console.log('data.js loaded, chapters:', Object.keys(learningData.chapters).length);
