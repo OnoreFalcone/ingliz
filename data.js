@@ -1,4 +1,5 @@
 // Merkezi veri yapısı - Kolayca genişletilebilir
+console.log('START: data.js wird geladen...');
 var learningData = {
     chapters: {
         1: {
