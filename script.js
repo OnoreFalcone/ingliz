@@ -17,6 +17,12 @@ const readingTab = document.getElementById('readingTab');
 const gameTab = document.getElementById('gameTab');
 const checkExerciseBtn = document.getElementById('checkExercise');
 const checkReadingBtn = document.getElementById('checkReading');
+const mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
+const mobileAccordionContent = document.getElementById('mobileAccordionContent');
+const mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
+const currentChapterIndicator = document.getElementById('currentChapterIndicator');
+const mobileProgressFill = document.getElementById('mobileProgressFill');
+const mobileProgressText = document.getElementById('mobileProgressText');
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,10 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Event Listeners
 function setupEventListeners() {
-    // Menu toggle for mobile
-    menuToggle.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-    });
+    // Menu toggle for mobile (only if exists)
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    }
 
     // Chapter navigation
     chapterButtons.forEach(btn => {
@@ -40,7 +48,7 @@ function setupEventListeners() {
             loadChapter(chapterId);
             
             // Close sidebar on mobile after selection
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 900) {
                 sidebar.classList.remove('active');
             }
         });
@@ -59,6 +67,26 @@ function setupEventListeners() {
 
     // Reading check button
     checkReadingBtn.addEventListener('click', checkReading);
+
+    // Mobile accordion toggle
+    if (mobileAccordionTrigger) {
+        mobileAccordionTrigger.addEventListener('click', () => {
+            mobileAccordionTrigger.classList.toggle('active');
+            mobileAccordionContent.classList.toggle('active');
+        });
+    }
+
+    // Mobile chapter selection
+    mobileChapterItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const chapterId = parseInt(item.dataset.mobileChapter);
+            loadChapter(chapterId);
+            
+            // Close accordion after selection
+            mobileAccordionTrigger.classList.remove('active');
+            mobileAccordionContent.classList.remove('active');
+        });
+    });
 }
 
 // Load chapter content
@@ -75,6 +103,19 @@ function loadChapter(chapterId) {
             btn.classList.add('active');
         }
     });
+
+    // Update mobile chapter items
+    mobileChapterItems.forEach(item => {
+        item.classList.remove('active');
+        if (parseInt(item.dataset.mobileChapter) === chapterId) {
+            item.classList.add('active');
+        }
+    });
+
+    // Update current chapter indicator
+    if (currentChapterIndicator) {
+        currentChapterIndicator.textContent = chapterId;
+    }
 
     // Load content for all tabs
     loadExplanation(chapter);
@@ -723,6 +764,12 @@ function updateProgressBar() {
 
     progressFill.style.width = `${percentage}%`;
     progressText.textContent = `%${percentage} Tamamlandı`;
+
+    // Update mobile progress display
+    if (mobileProgressFill && mobileProgressText) {
+        mobileProgressFill.style.width = `${percentage}%`;
+        mobileProgressText.textContent = `${percentage}%`;
+    }
 }
 
 // Show confetti animation

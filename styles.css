@@ -24,14 +24,176 @@ body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
+    -webkit-text-size-adjust: 100%; /* Verhindert Text-Zoom auf iOS */
+    -webkit-tap-highlight-color: transparent; /* Bessere Touch-Feedback */
 }
 
 .app-container {
     display: flex;
     min-height: 100vh;
+    flex-direction: column;
 }
 
-/* Sidebar Styles */
+/* Mobile Header - Accordion Style - IMMER SICHTBAR AUF MOBILE */
+.mobile-header {
+    display: none; /* Standardmäßig ausgeblendet für Desktop */
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.mobile-accordion-trigger {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    -webkit-appearance: none; /* Entfernt iOS Styling */
+}
+
+.mobile-accordion-trigger:active {
+    background: #3A7BC8;
+}
+
+.mobile-accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.current-chapter-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.mobile-accordion-icon {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.mobile-accordion-trigger.active .mobile-accordion-icon {
+    transform: rotate(180deg);
+}
+
+.mobile-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: var(--bg-light);
+}
+
+.mobile-accordion-content.active {
+    max-height: 600px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.mobile-chapter-list {
+    padding: 0.5rem;
+}
+
+.mobile-chapter-item {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.4rem;
+    background: var(--bg-white);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-align: left;
+    border: none; /* iOS Safari optimiert */
+}
+
+.mobile-chapter-item:active {
+    transform: scale(0.98);
+}
+
+.mobile-chapter-item.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.mobile-chapter-item.completed {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+.mobile-chapter-number {
+    width: 32px;
+    height: 32px;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+.mobile-chapter-item.active .mobile-chapter-number,
+.mobile-chapter-item.completed .mobile-chapter-number {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.mobile-chapter-name {
+    font-weight: 500;
+}
+
+.mobile-progress-section {
+    padding: 1rem 1.25rem;
+    background: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+.mobile-progress-bar {
+    width: 100%;
+    height: 10px;
+    background: var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.mobile-progress-text {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+/* Sidebar Navigation - NUR FÜR DESKTOP */
 .sidebar {
     width: 280px;
     background: var(--bg-white);
@@ -59,7 +221,7 @@ body {
 }
 
 .menu-toggle {
-    display: none;
+    display: none; /* Standardmäßig ausgeblendet */
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -159,10 +321,10 @@ body {
     color: var(--text-light);
 }
 
-/* Main Content Styles */
+/* Main Content Area */
 .main-content {
     flex: 1;
-    margin-left: 280px;
+    margin-left: 280px; /* Für Desktop mit Sidebar */
     padding: 2rem;
     transition: margin-left 0.3s ease;
 }
@@ -578,12 +740,17 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     user-select: none;
+    touch-action: manipulation; /* Bessere Touch-Interaktion */
 }
 
 .word-tile:hover {
     background: #3A7BC8;
     transform: translateY(-3px);
     box-shadow: var(--shadow-hover);
+}
+
+.word-tile:active {
+    transform: scale(0.95);
 }
 
 .word-tile.used {
@@ -704,70 +871,178 @@ body {
     }
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* ========== MOBILE RESPONSIVE DESIGN ========== */
+/* WICHTIG: iPhone 14 Plus und andere mobile Geräte */
+@media (max-width: 900px) {
+    /* Mobile Header anzeigen */
+    .mobile-header {
+        display: block !important;
+    }
+    
+    /* Sidebar komplett ausblenden für mobile Geräte */
     .sidebar {
+        display: none !important;
         transform: translateX(-100%);
         width: 280px;
     }
-
+    
+    /* Sidebar nur anzeigen, wenn aktiv (über Menü-Button) - für Zukunft */
     .sidebar.active {
+        display: flex !important;
         transform: translateX(0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1001;
+        background: var(--bg-white);
     }
-
-    .menu-toggle {
-        display: block;
-    }
-
+    
+    /* Main Content ohne Margin für mobile */
     .main-content {
-        margin-left: 0;
-        padding: 1rem;
+        margin-left: 0 !important;
+        padding: 1rem !important;
+        padding-top: 0.5rem !important;
+        width: 100%;
     }
-
+    
+    /* Tab Navigation für mobile optimieren */
     .tab-navigation {
         flex-direction: column;
+        gap: 0.25rem;
     }
-
+    
+    .tab-btn {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Content Section anpassen */
     .content-section {
-        padding: 1rem;
+        padding: 1rem !important;
+        min-height: auto;
     }
-
+    
+    /* Memory Grid für mobile anpassen */
     .memory-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem;
     }
-
+    
+    /* Word Tiles optimieren */
     .word-tiles {
         gap: 0.5rem;
     }
-
+    
     .word-tile {
         padding: 0.75rem 1rem;
         font-size: 1rem;
     }
-
+    
+    /* Quiz Antworten für mobile */
     .quiz-answers {
         flex-direction: column;
+        gap: 0.5rem;
     }
-
+    
     .quiz-answers button {
         width: 100%;
+        min-width: auto;
+    }
+    
+    /* Menü-Button in Sidebar für mobile anzeigen */
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* Touch-Optimierungen */
+    button, .chapter-btn, .mobile-chapter-item, .word-tile {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Textgrößen anpassen */
+    .tab-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .explanation-box h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Scroll-Verhalten optimieren */
+    html {
+        -webkit-overflow-scrolling: touch;
     }
 }
 
+/* Extra kleine Geräte */
 @media (max-width: 480px) {
     .sidebar-header h1 {
         font-size: 1.2rem;
     }
-
+    
     .tab-content h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
-
+    
     .chapter-btn {
         padding: 0.75rem;
     }
-
+    
     .chapter-title {
         font-size: 0.9rem;
+    }
+    
+    .memory-grid {
+        gap: 0.25rem;
+    }
+    
+    .memory-card {
+        font-size: 1rem;
+    }
+    
+    /* iPhone Notch Safe Area Support */
+    @supports (padding: max(0px)) {
+        .mobile-header,
+        .main-content {
+            padding-left: max(1rem, env(safe-area-inset-left));
+            padding-right: max(1rem, env(safe-area-inset-right));
+        }
+        
+        .mobile-accordion-trigger {
+            padding-left: max(1.25rem, env(safe-area-inset-left));
+            padding-right: max(1.25rem, env(safe-area-inset-right));
+        }
+    }
+}
+
+/* Desktop-spezifische Optimierungen */
+@media (min-width: 901px) {
+    /* Auf Desktop: Mobile Header ausblenden */
+    .mobile-header {
+        display: none !important;
+    }
+    
+    /* Auf Desktop: Sidebar immer anzeigen */
+    .sidebar {
+        display: flex !important;
+    }
+    
+    /* Auf Desktop: Main Content mit Margin */
+    .main-content {
+        margin-left: 280px !important;
+    }
+}
+
+/* High-DPI Displays optimieren */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .progress-bar,
+    .mobile-progress-bar {
+        height: 8px;
+    }
+    
+    .border-color {
+        border-width: 0.5px;
     }
 }

@@ -8,6 +8,51 @@
 </head>
 <body>
     <div class="app-container">
+        <!-- Mobile Header -->
+        <header class="mobile-header" id="mobileHeader">
+            <button class="mobile-accordion-trigger" id="mobileAccordionTrigger">
+                <span class="mobile-accordion-title">
+                    📚 Kapitel
+                    <span class="current-chapter-indicator" id="currentChapterIndicator">1</span>
+                </span>
+                <span class="mobile-accordion-icon" id="mobileAccordionIcon">▼</span>
+            </button>
+            <div class="mobile-accordion-content" id="mobileAccordionContent">
+                <div class="mobile-chapter-list">
+                    <button class="mobile-chapter-item active" data-mobile-chapter="1">
+                        <span class="mobile-chapter-number">1</span>
+                        <span class="mobile-chapter-name">Temel Bilgiler</span>
+                    </button>
+                    <button class="mobile-chapter-item" data-mobile-chapter="2">
+                        <span class="mobile-chapter-number">2</span>
+                        <span class="mobile-chapter-name">Aile</span>
+                    </button>
+                    <button class="mobile-chapter-item" data-mobile-chapter="3">
+                        <span class="mobile-chapter-number">3</span>
+                        <span class="mobile-chapter-name">Günlük Rutin</span>
+                    </button>
+                    <button class="mobile-chapter-item" data-mobile-chapter="4">
+                        <span class="mobile-chapter-number">4</span>
+                        <span class="mobile-chapter-name">Soru Sorma</span>
+                    </button>
+                    <button class="mobile-chapter-item" data-mobile-chapter="5">
+                        <span class="mobile-chapter-number">5</span>
+                        <span class="mobile-chapter-name">Tatil</span>
+                    </button>
+                    <button class="mobile-chapter-item" data-mobile-chapter="6">
+                        <span class="mobile-chapter-number">6</span>
+                        <span class="mobile-chapter-name">Alışveriş</span>
+                    </button>
+                </div>
+                <div class="mobile-progress-section">
+                    <div class="mobile-progress-bar">
+                        <div class="mobile-progress-fill" id="mobileProgressFill"></div>
+                    </div>
+                    <p class="mobile-progress-text" id="mobileProgressText">0% Tamamlandı</p>
+                </div>
+            </div>
+        </header>
+
         <!-- Sidebar Navigation -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
