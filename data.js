@@ -1628,28 +1628,6 @@ var learningData = {
                     </div>
                 `
             },
-                            <tr><td><strong>Beach</strong></td><td>Plaj</td></tr>
-                            <tr><td><strong>Hotel</strong></td><td>Otel</td></tr>
-                            <tr><td><strong>Airport</strong></td><td>Havalimanı</td></tr>
-                            <tr><td><strong>Suitcase</strong></td><td>Bavul</td></tr>
-                            <tr><td><strong>Ticket</strong></td><td>Bilet</td></tr>
-                            <tr><td><strong>Passport</strong></td><td>Pasaport</td></tr>
-                            <tr><td><strong>Camera</strong></td><td>Fotoğraf makinesi</td></tr>
-                            <tr><td><strong>Map</strong></td><td>Harita</td></tr>
-                        </table>
-                    </div>
-                    <div class="explanation-box">
-                        <h3>🗣️ Tatilde Kullanılan Cümleler</h3>
-                        <ul>
-                            <li>I go to the beach. (Plaja giderim.)</li>
-                            <li>We stay in a hotel. (Otelde kalırız.)</li>
-                            <li>She takes photos. (O fotoğraf çeker.)</li>
-                            <li>They visit museums. (Onlar müze gezer.)</li>
-                            <li>Do you have a map? (Haritanız var mı?)</li>
-                        </ul>
-                    </div>
-                `
-            },
             exercises: [
                 // Seviye 1: Temel Kelime Bilgisi (1-9)
                 {
