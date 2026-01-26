@@ -182,6 +182,12 @@ function loadExercises(chapter) {
     const exerciseContent = document.getElementById('exerciseContent');
     exerciseContent.innerHTML = '';
 
+    // Check if exercises exist
+    if (!chapter.exercises || chapter.exercises.length === 0) {
+        exerciseContent.innerHTML = '<p class="no-content">Für dieses Kapitel sind noch keine Übungen verfügbar.</p>';
+        return;
+    }
+
     chapter.exercises.forEach((exercise, index) => {
         const exerciseDiv = document.createElement('div');
         exerciseDiv.className = 'exercise-item';
