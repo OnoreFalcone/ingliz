@@ -7,14 +7,28 @@ let userProgress = {
 };
 
 // DOM Elements - will be initialized after DOM loads
-let sidebar, menuToggle, chapterButtons, tabButtons;
-let explanationTab, exerciseTab, readingTab, gameTab;
-let checkExerciseBtn, checkReadingBtn;
-let mobileAccordionTrigger, mobileAccordionContent, mobileChapterItems;
+let sidebar;
+let menuToggle;
+let chapterButtons;
+let tabButtons;
+let explanationTab;
+let exerciseTab;
+let readingTab;
+let gameTab;
+let checkExerciseBtn;
+let checkReadingBtn;
+let mobileAccordionTrigger;
+let mobileAccordionContent;
+let mobileChapterItems;
+let currentChapterIndicator;
+let mobileProgressFill;
+let mobileProgressText;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize DOM elements
+    console.log('DOM loaded, initializing app...');
+    
+    // Initialize DOM elements after DOM is loaded
     sidebar = document.getElementById('sidebar');
     menuToggle = document.getElementById('menuToggle');
     chapterButtons = document.querySelectorAll('.chapter-btn');
@@ -25,25 +39,34 @@ document.addEventListener('DOMContentLoaded', () => {
     gameTab = document.getElementById('gameTab');
     checkExerciseBtn = document.getElementById('checkExercise');
     checkReadingBtn = document.getElementById('checkReading');
-    
-    // Initialize mobile elements
     mobileAccordionTrigger = document.getElementById('mobileAccordionTrigger');
     mobileAccordionContent = document.getElementById('mobileAccordionContent');
     mobileChapterItems = document.querySelectorAll('.mobile-chapter-item');
+    currentChapterIndicator = document.getElementById('currentChapterIndicator');
+    mobileProgressFill = document.getElementById('mobileProgressFill');
+    mobileProgressText = document.getElementById('mobileProgressText');
+    
+    console.log('DOM elements initialized:', {
+        chapterButtons: chapterButtons.length,
+        tabButtons: tabButtons.length,
+        mobileChapterItems: mobileChapterItems.length,
+        learningDataExists: typeof learningData !== 'undefined'
+    });
     
     loadProgress();
     loadChapter(1);
     setupEventListeners();
-    setupMobileListeners();
     updateProgressBar();
 });
 
 // Event Listeners
 function setupEventListeners() {
-    // Menu toggle for mobile
-    menuToggle.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-    });
+    // Menu toggle for mobile (only if exists)
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    }
 
     // Chapter navigation
     chapterButtons.forEach(btn => {
@@ -52,7 +75,7 @@ function setupEventListeners() {
             loadChapter(chapterId);
             
             // Close sidebar on mobile after selection
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 900) {
                 sidebar.classList.remove('active');
             }
         });
@@ -71,10 +94,7 @@ function setupEventListeners() {
 
     // Reading check button
     checkReadingBtn.addEventListener('click', checkReading);
-}
 
-// Mobile event listeners
-function setupMobileListeners() {
     // Mobile accordion toggle
     if (mobileAccordionTrigger) {
         mobileAccordionTrigger.addEventListener('click', () => {
@@ -83,48 +103,31 @@ function setupMobileListeners() {
         });
     }
 
-    // Mobile chapter navigation
-    mobileChapterItems.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const chapterId = parseInt(btn.dataset.chapter);
+    // Mobile chapter selection
+    mobileChapterItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const chapterId = parseInt(item.dataset.mobileChapter);
             loadChapter(chapterId);
             
             // Close accordion after selection
             mobileAccordionTrigger.classList.remove('active');
             mobileAccordionContent.classList.remove('active');
-            
-            // Update mobile chapter indicator
-            updateMobileChapterIndicator(chapterId);
         });
-    });
-}
-
-// Update mobile chapter indicator
-function updateMobileChapterIndicator(chapterId) {
-    const currentChapterNumber = document.getElementById('currentChapterNumber');
-    const mobileChapterTitle = document.getElementById('mobileChapterTitle');
-    const chapter = learningData.chapters[chapterId];
-    
-    if (currentChapterNumber && mobileChapterTitle && chapter) {
-        currentChapterNumber.textContent = chapterId;
-        mobileChapterTitle.textContent = chapter.title;
-    }
-    
-    // Update active mobile chapter item
-    mobileChapterItems.forEach(btn => {
-        btn.classList.remove('active');
-        if (parseInt(btn.dataset.chapter) === chapterId) {
-            btn.classList.add('active');
-        }
     });
 }
 
 // Load chapter content
 function loadChapter(chapterId) {
+    console.log('loadChapter called with:', chapterId);
     currentChapter = chapterId;
     const chapter = learningData.chapters[chapterId];
     
-    if (!chapter) return;
+    console.log('Chapter data:', chapter ? 'found' : 'NOT FOUND');
+    
+    if (!chapter) {
+        console.error('Chapter not found:', chapterId);
+        return;
+    }
 
     // Update active chapter button
     chapterButtons.forEach(btn => {
@@ -133,6 +136,19 @@ function loadChapter(chapterId) {
             btn.classList.add('active');
         }
     });
+
+    // Update mobile chapter items
+    mobileChapterItems.forEach(item => {
+        item.classList.remove('active');
+        if (parseInt(item.dataset.mobileChapter) === chapterId) {
+            item.classList.add('active');
+        }
+    });
+
+    // Update current chapter indicator
+    if (currentChapterIndicator) {
+        currentChapterIndicator.textContent = chapterId;
+    }
 
     // Load content for all tabs
     loadExplanation(chapter);
@@ -146,17 +162,31 @@ function loadChapter(chapterId) {
 
 // Load explanation content
 function loadExplanation(chapter) {
+    console.log('loadExplanation called');
     const titleEl = document.getElementById('chapterTitle');
     const contentEl = document.getElementById('explanationContent');
     
-    titleEl.textContent = chapter.title;
-    contentEl.innerHTML = chapter.explanation.content;
+    console.log('Elements found:', {
+        titleEl: titleEl !== null,
+        contentEl: contentEl !== null,
+        hasTitle: !!chapter.title,
+        hasContent: !!chapter.explanation?.content
+    });
+    
+    if (titleEl) titleEl.textContent = chapter.title;
+    if (contentEl) contentEl.innerHTML = chapter.explanation.content;
 }
 
 // Load exercises
 function loadExercises(chapter) {
     const exerciseContent = document.getElementById('exerciseContent');
     exerciseContent.innerHTML = '';
+
+    // Check if exercises exist
+    if (!chapter.exercises || chapter.exercises.length === 0) {
+        exerciseContent.innerHTML = '<p class="no-content">Für dieses Kapitel sind noch keine Übungen verfügbar.</p>';
+        return;
+    }
 
     chapter.exercises.forEach((exercise, index) => {
         const exerciseDiv = document.createElement('div');
@@ -411,7 +441,45 @@ function loadGame(chapter) {
         loadWordSortGame(game, gameContent);
     } else if (game.type === 'speedQuiz') {
         loadSpeedQuiz(game, gameContent);
+    } else if (game.type === 'conversation_simulator') {
+        loadConversationSimulator(game, gameContent);
+    } else if (game.type === 'sentence_constructor') {
+        loadSentenceConstructor(game, gameContent);
     }
+}
+
+// Conversation Simulator Loader
+function loadConversationSimulator(game, container) {
+    container.innerHTML = `
+        <div class="game-header">
+            <h2>${game.title}</h2>
+            <span class="difficulty-badge ${game.difficulty}">
+                <span class="star">${game.difficulty === 'easy' ? '⭐' : game.difficulty === 'medium' ? '⭐⭐' : '⭐⭐⭐'}</span>
+                ${game.difficulty === 'easy' ? 'Einfach' : game.difficulty === 'medium' ? 'Mittel' : 'Schwer'}
+            </span>
+        </div>
+        <div id="conversationSimulatorContainer"></div>
+    `;
+    
+    const simContainer = document.getElementById('conversationSimulatorContainer');
+    new ConversationSimulator(simContainer, game);
+}
+
+// Sentence Constructor Loader  
+function loadSentenceConstructor(game, container) {
+    container.innerHTML = `
+        <div class="game-header">
+            <h2>${game.title}</h2>
+            <span class="difficulty-badge ${game.difficulty}">
+                <span class="star">${game.difficulty === 'easy' ? '⭐' : game.difficulty === 'medium' ? '⭐⭐' : '⭐⭐⭐'}</span>
+                ${game.difficulty === 'easy' ? 'Einfach' : game.difficulty === 'medium' ? 'Mittel' : 'Schwer'}
+            </span>
+        </div>
+        <div id="sentenceConstructorContainer"></div>
+    `;
+    
+    const constructorContainer = document.getElementById('sentenceConstructorContainer');
+    sentenceConstructorInstance = new SentenceConstructor(constructorContainer, game);
 }
 
 // Memory Game
@@ -778,16 +846,14 @@ function updateProgressBar() {
 
     const progressFill = document.getElementById('progressFill');
     const progressText = document.getElementById('progressText');
-    const mobileProgressFill = document.getElementById('mobileProgressFill');
-    const mobileProgressText = document.getElementById('mobileProgressText');
 
     progressFill.style.width = `${percentage}%`;
     progressText.textContent = `%${percentage} Tamamlandı`;
-    
-    // Update mobile progress bar
+
+    // Update mobile progress display
     if (mobileProgressFill && mobileProgressText) {
         mobileProgressFill.style.width = `${percentage}%`;
-        mobileProgressText.textContent = `%${percentage} Tamamlandı`;
+        mobileProgressText.textContent = `${percentage}%`;
     }
 }
 
@@ -835,3 +901,348 @@ function loadProgress() {
         });
     }
 }
+
+// ========================================
+// B1 LEVEL - NEW GAME ENGINES
+// ========================================
+
+// Conversation Simulator Engine
+class ConversationSimulator {
+    constructor(container, conversationData) {
+        this.container = container;
+        this.data = conversationData;
+        this.history = [];
+        this.currentNode = 'start';
+        this.score = { correct: 0, total: 0 };
+        this.init();
+    }
+
+    init() {
+        this.render();
+    }
+
+    render() {
+        const node = this.data.nodes[this.currentNode];
+        if (!node) return;
+
+        let html = '<div class="conversation-container">';
+        
+        // Render conversation history
+        html += '<div class="conversation-history">';
+        this.history.forEach(entry => {
+            html += this.createBubble(entry.speaker, entry.text);
+        });
+        html += '</div>';
+
+        // Render current NPC message
+        if (node.npcText) {
+            html += this.createBubble('npc', node.npcText);
+        }
+
+        // Render choices or completion
+        if (node.choices && node.choices.length > 0) {
+            html += '<div class="conversation-choices">';
+            node.choices.forEach((choice, index) => {
+                html += `
+                    <button class="choice-btn" data-choice="${index}">
+                        ${choice.text}
+                    </button>
+                `;
+            });
+            html += '</div>';
+        } else if (node.type === 'end') {
+            html += this.renderCompletion();
+        }
+
+        html += '</div>';
+        this.container.innerHTML = html;
+
+        // Add event listeners
+        this.container.querySelectorAll('.choice-btn').forEach((btn, index) => {
+            btn.addEventListener('click', () => this.handleChoice(index));
+        });
+    }
+
+    createBubble(speaker, text) {
+        const isUser = speaker === 'user';
+        const avatar = isUser ? '👤' : '👨‍⚕️';
+        
+        return `
+            <div class="conversation-bubble ${speaker}">
+                <div class="bubble-avatar ${speaker}">${avatar}</div>
+                <div class="bubble-content">${text}</div>
+            </div>
+        `;
+    }
+
+    handleChoice(choiceIndex) {
+        const node = this.data.nodes[this.currentNode];
+        const choice = node.choices[choiceIndex];
+
+        // Add user's choice to history
+        this.history.push({
+            speaker: 'user',
+            text: choice.text
+        });
+
+        // Track score
+        this.score.total++;
+        if (choice.correct) {
+            this.score.correct++;
+        }
+
+        // Show feedback
+        this.showFeedback(choice);
+
+        // Move to next node after delay
+        setTimeout(() => {
+            this.currentNode = choice.next;
+            if (choice.npcResponse) {
+                this.history.push({
+                    speaker: 'npc',
+                    text: choice.npcResponse
+                });
+            }
+            this.render();
+        }, choice.correct ? 1500 : 2000);
+    }
+
+    showFeedback(choice) {
+        const feedbackHTML = `
+            <div class="choice-feedback ${choice.correct ? 'correct' : 'incorrect'}">
+                <strong>${choice.correct ? '✓ Richtig!' : '✗ Nicht ganz...'}</strong><br>
+                ${choice.feedback || ''}
+            </div>
+        `;
+        
+        const choicesContainer = this.container.querySelector('.conversation-choices');
+        if (choicesContainer) {
+            choicesContainer.insertAdjacentHTML('afterend', feedbackHTML);
+        }
+    }
+
+    renderCompletion() {
+        const percentage = Math.round((this.score.correct / this.score.total) * 100);
+        let message = '';
+        
+        if (percentage >= 80) {
+            message = '🎉 Ausgezeichnet! Du kommunizierst sehr gut!';
+        } else if (percentage >= 60) {
+            message = '👍 Gut gemacht! Du machst Fortschritte!';
+        } else {
+            message = '💪 Weiter üben! Du wirst besser!';
+        }
+
+        return `
+            <div class="score-display">
+                <div class="score-item">
+                    <div class="score-value">${this.score.correct}/${this.score.total}</div>
+                    <div class="score-label">Richtig</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-value">${percentage}%</div>
+                    <div class="score-label">Genauigkeit</div>
+                </div>
+            </div>
+            <div class="choice-feedback correct">
+                ${message}
+            </div>
+            <button class="btn-primary" onclick="location.reload()">🔄 Nochmal versuchen</button>
+        `;
+    }
+}
+
+// Sentence Constructor Engine
+class SentenceConstructor {
+    constructor(container, exerciseData) {
+        this.container = container;
+        this.data = exerciseData;
+        this.currentExercise = 0;
+        this.placedWords = [];
+        this.score = { correct: 0, total: exerciseData.sentences.length };
+        this.init();
+    }
+
+    init() {
+        this.render();
+    }
+
+    render() {
+        if (this.currentExercise >= this.data.sentences.length) {
+            this.renderCompletion();
+            return;
+        }
+
+        const sentence = this.data.sentences[this.currentExercise];
+        
+        let html = '<div class="sentence-constructor">';
+        html += `<h3>Satz ${this.currentExercise + 1} von ${this.data.sentences.length}</h3>`;
+        html += `<p class="grammar-focus"><strong>Aufgabe:</strong> ${sentence.instruction}</p>`;
+        
+        // Word bank
+        html += '<div class="word-bank" id="wordBank">';
+        const shuffledWords = this.shuffleArray([...sentence.words]);
+        shuffledWords.forEach((word, index) => {
+            html += `
+                <span class="draggable-word" draggable="true" data-word="${word}" data-index="${index}">
+                    ${word}
+                </span>
+            `;
+        });
+        html += '</div>';
+
+        // Drop zone
+        html += '<div class="sentence-drop-zone" id="dropZone">';
+        html += '<p style="color: var(--text-light); font-style: italic;">Ziehe die Wörter hierher...</p>';
+        html += '</div>';
+
+        html += '<button class="btn-primary" id="checkSentenceBtn">Überprüfen</button>';
+        html += '<div id="sentenceFeedback"></div>';
+        html += '</div>';
+
+        this.container.innerHTML = html;
+        this.setupDragAndDrop();
+
+        document.getElementById('checkSentenceBtn').addEventListener('click', () => {
+            this.checkSentence();
+        });
+    }
+
+    setupDragAndDrop() {
+        const words = this.container.querySelectorAll('.draggable-word');
+        const dropZone = document.getElementById('dropZone');
+
+        words.forEach(word => {
+            word.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', e.target.dataset.word);
+                e.target.style.opacity = '0.5';
+            });
+
+            word.addEventListener('dragend', (e) => {
+                e.target.style.opacity = '1';
+            });
+
+            // Mobile touch support
+            word.addEventListener('click', () => {
+                if (!word.classList.contains('placed')) {
+                    this.addWordToSentence(word.dataset.word);
+                    word.classList.add('placed');
+                }
+            });
+        });
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('drag-over');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+            
+            const word = e.dataTransfer.getData('text/plain');
+            this.addWordToSentence(word);
+            
+            // Mark word as placed
+            const wordElement = this.container.querySelector(`[data-word="${word}"]`);
+            if (wordElement) wordElement.classList.add('placed');
+        });
+    }
+
+    addWordToSentence(word) {
+        this.placedWords.push(word);
+        this.updateDropZone();
+    }
+
+    updateDropZone() {
+        const dropZone = document.getElementById('dropZone');
+        
+        if (this.placedWords.length === 0) {
+            dropZone.innerHTML = '<p style="color: var(--text-light); font-style: italic;">Ziehe die Wörter hierher...</p>';
+        } else {
+            let html = '';
+            this.placedWords.forEach((word, index) => {
+                html += `
+                    <span class="draggable-word" onclick="sentenceConstructorInstance.removeWord(${index})">
+                        ${word} <small>✕</small>
+                    </span>
+                `;
+            });
+            dropZone.innerHTML = html;
+        }
+    }
+
+    removeWord(index) {
+        const word = this.placedWords[index];
+        this.placedWords.splice(index, 1);
+        this.updateDropZone();
+        
+        // Unmark word in bank
+        const wordElement = this.container.querySelector(`[data-word="${word}"].placed`);
+        if (wordElement) wordElement.classList.remove('placed');
+    }
+
+    checkSentence() {
+        const sentence = this.data.sentences[this.currentExercise];
+        const userSentence = this.placedWords.join(' ');
+        const correctSentence = sentence.correct;
+        const isCorrect = userSentence === correctSentence;
+
+        if (isCorrect) {
+            this.score.correct++;
+        }
+
+        const feedback = document.getElementById('sentenceFeedback');
+        feedback.innerHTML = `
+            <div class="choice-feedback ${isCorrect ? 'correct' : 'incorrect'}">
+                <strong>${isCorrect ? '✓ Perfekt!' : '✗ Nicht ganz richtig'}</strong><br>
+                <p><strong>Dein Satz:</strong> ${userSentence}</p>
+                <p><strong>Richtig:</strong> ${correctSentence}</p>
+                ${sentence.explanation ? `<p><em>${sentence.explanation}</em></p>` : ''}
+            </div>
+        `;
+
+        setTimeout(() => {
+            this.currentExercise++;
+            this.placedWords = [];
+            this.render();
+        }, 3000);
+    }
+
+    renderCompletion() {
+        const percentage = Math.round((this.score.correct / this.score.total) * 100);
+        
+        this.container.innerHTML = `
+            <div class="sentence-constructor">
+                <h2>Abgeschlossen! 🎉</h2>
+                <div class="score-display">
+                    <div class="score-item">
+                        <div class="score-value">${this.score.correct}/${this.score.total}</div>
+                        <div class="score-label">Richtig</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-value">${percentage}%</div>
+                        <div class="score-label">Genauigkeit</div>
+                    </div>
+                </div>
+                <button class="btn-primary" onclick="location.reload()">🔄 Nochmal versuchen</button>
+            </div>
+        `;
+    }
+
+    shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+}
+
+// Global instance for sentence constructor (for remove word function)
+let sentenceConstructorInstance = null;
+
